@@ -1,0 +1,1 @@
+include ':app', ':basic_sdk', ':component_sdk', ':conn_sdk'

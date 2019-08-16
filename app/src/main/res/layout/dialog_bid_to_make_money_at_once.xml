@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_basic_dialog"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/bid_to_make_money_at_once"
+            android:textColor="@color/text_dark_black"
+            android:textSize="@dimen/normal_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:background="@mipmap/ic_cross" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/include_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_my_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/my_offer"
+            android:textColor="@color/text_dark_black"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/tv_my_offer_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="元"
+            android:textColor="@color/text_dark_black"
+            android:textSize="@dimen/small_size" />
+
+        <EditText
+            android:id="@+id/et_my_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/tv_my_offer_unit"
+            android:layout_toRightOf="@id/tv_my_offer"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="@string/please_fill_in"
+            android:inputType="number"
+            android:textColor="@color/text_dark_black"
+            android:textSize="@dimen/small_size" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/bid_to_make_money_at_once_hint"
+        android:textColor="@color/theme_orange"
+        android:textSize="@dimen/small_size" />
+
+    <include
+        layout="@layout/include_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_height"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/service_my_advantage"
+        android:textColor="@color/text_dark_black"
+        android:textSize="@dimen/small_size" />
+
+    <EditText
+        android:id="@+id/et_my_advantage"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:gravity="left"
+        android:maxLength="100"
+        android:textColor="@color/text_dark_black"
+        android:textSize="@dimen/small_size" />
+
+    <TextView
+        android:id="@+id/tv_number_of_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape_recommend_tag_background"
+        android:paddingBottom="3dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="3dp"
+        android:text="0/100"
+        android:textColor="@color/text_light_black"
+        android:textSize="@dimen/min_size" />
+
+    <include
+        layout="@layout/include_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_height"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btn_bid_at_once"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_common_button_background"
+        android:text="@string/bid_at_once"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size" />
+
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MultiStatusView">
+        <attr name="msv_loading_view" format="reference" />
+        <attr name="msv_error_view" format="reference" />
+        <attr name="msv_empty_view" format="reference" />
+        <attr name="msv_no_network_view" format="reference" />
+        <attr name="msv_status">
+            <enum name="normal" value="0" />
+            <enum name="loading" value="1" />
+            <enum name="error" value="2" />
+            <enum name="empty" value="3" />
+            <enum name="no_network" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference" />
+        <attr name="mvAnimDuration" format="integer|reference" />
+        <attr name="mvTextSize" format="dimension|reference" />
+        <attr name="mvTextColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="NineGridLayout">
+        <attr name="ngl_total_width" format="integer" />
+        <attr name="ngl_gap" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularRevealButton">
+        <attr name="focus_icon" format="reference" />
+        <attr name="defocus_icon" format="reference" />
+        <attr name="focus_color" format="color" />
+        <attr name="defocus_color" format="color" />
+        <attr name="text" format="string" />
+        <attr name="textsize" format="dimension" />
+        <attr name="anim_show" format="boolean" />
+        <attr name="is_selected" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="searchedit">
+        <attr name="imagewidth" format="dimension" />
+        <attr name="sv_search_icon_resource_id" format="reference" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer" />
+        <attr name="rv_rippleDuration" format="integer" />
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0" />
+            <enum name="doubleRipple" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+
+    </declare-styleable>
+
+    <declare-styleable name="EditPasswordView">
+        <attr name="epv_show_left_icon" format="boolean" />
+        <attr name="epv_left_icon_background" format="reference" />
+        <attr name="epv_hint" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <!-- 标签之间的水平间距 -->
+        <attr name="fl_horizontalChildGap" format="dimension" />
+        <!-- 标签之间的垂直间距 -->
+        <attr name="fl_verticalChildGap" format="dimension" />
+        <!-- 是否平均分配每一行的剩余水平方向的空白区域给该行的标签 -->
+        <attr name="fl_isDistributionWhiteSpacing" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EaseChatMessageList">
+        <attr name="msgListMyBubbleBackground" format="reference" />
+        <attr name="msgListOtherBubbleBackground" format="reference" />
+        <attr name="msgListShowUserAvatar" format="boolean" />
+        <attr name="msgListShowUserNick" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EaseConversationList">
+        <attr name="cvsListPrimaryTextColor" format="color" />
+        <attr name="cvsListSecondaryTextColor" format="color" />
+        <attr name="cvsListTimeTextColor" format="color" />
+        <attr name="cvsListPrimaryTextSize" format="dimension" />
+        <attr name="cvsListSecondaryTextSize" format="dimension" />
+        <attr name="cvsListTimeTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="EaseContactList">
+        <attr name="ctsListPrimaryTextColor" format="color" />
+        <attr name="ctsListPrimaryTextSize" format="dimension" />
+        <attr name="ctsListShowSiderBar" format="boolean" />
+        <attr name="ctsListInitialLetterBg" format="reference|color" />
+        <attr name="ctsListInitialLetterColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="EaseEmojiconMenu">
+        <attr name="bigEmojiconRows" format="integer" />
+        <attr name="emojiconColumns" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="EaseChatExtendMenu">
+        <attr name="numColumns" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="EaseTitleBar">
+        <attr name="titleBarTitle" format="string" />
+        <attr name="titleBarLeftImage" format="reference" />
+        <attr name="titleBarRightImage" format="reference" />
+        <attr name="titleBarBackground" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="EaseSwitchButton">
+        <attr name="switchOpenImage" format="reference" />
+        <attr name="switchCloseImage" format="reference" />
+        <attr name="switchStatus">
+            <enum name="open" value="0" />
+            <enum name="close" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="EaseImageView">
+        <attr name="ease_border_color" format="color" />
+        <attr name="ease_border_width" format="dimension" />
+        <attr name="ease_press_alpha" format="integer" />
+        <attr name="ease_press_color" format="color" />
+        <attr name="ease_radius" format="dimension" />
+        <attr name="ease_shape_type" format="enum">
+            <enum name="none" value="0" />
+            <enum name="round" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LetterBarView">
+        <!-- A drawable to use as the background of the LetterBarView -->
+        <attr name="lbv_letter_bar_background" format="reference|color" />
+
+        <!-- Text Color of the LetterBarView text -->
+        <attr name="lbv_letter_bar_text_color" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Overlay -->
+        <attr name="lbv_overlay_background" format="reference|color" />
+
+        <!-- Text Color of the Overlay text -->
+        <attr name="lbv_overlay_text_Color" format="reference|color" />
+
+        <!-- Text Size of the Overlay text -->
+        <attr name="lbv_overlay_text_size" format="reference|dimension" />
+    </declare-styleable>
+
+    <!-- 支付密码输入框 -->
+    <declare-styleable name="PaymentPasswordEditText">
+        <attr name="ppet_background_rectangle_color" format="color" />
+        <attr name="ppet_background_line_color" format="color" />
+        <attr name="ppet_password_circle_color" format="color" />
+        <attr name="ppet_password_circle_radius" format="dimension" />
+        <attr name="ppet_password_length" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeItemLayout">
+        <attr name="sil_swipeDirection" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="sil_bottomMode" format="enum">
+            <enum name="pullOut" value="0" />
+            <enum name="layDown" value="1" />
+        </attr>
+        <attr name="sil_springDistance" format="dimension" />
+        <attr name="sil_swipeAble" format="boolean" />
+    </declare-styleable>
+
+    <attr name="cropImageStyle" format="reference" />
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showCircle" format="boolean" />
+        <attr name="showHandles">
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LockPatternView">
+        <attr name="lpv_min_selected_circle_number" format="integer" />
+        <attr name="lpv_common_big_circle_color" format="color" />
+        <attr name="lpv_common_small_circle_color" format="color" />
+        <attr name="lpv_error_big_circle_color" format="color" />
+        <attr name="lpv_error_small_circle_color" format="color" />
+        <attr name="lpv_common_line_color" format="color" />
+        <attr name="lpv_error_line_color" format="color" />
+        <attr name="lpv_line_width" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TransactPasswordEditText">
+        <attr name="tpet_background_color" format="color" />
+        <attr name="tpet_password_text_length" format="integer" />
+        <attr name="tpet_password_text_color" format="color" />
+        <attr name="tpet_normal_underline_color" format="color" />
+        <attr name="tpet_input_underline_color" format="color" />
+    </declare-styleable>
+
+</resources>

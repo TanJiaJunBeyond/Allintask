@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/common_background_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_all_service_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ll_service_city"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_star"
+                android:drawablePadding="5dp"
+                android:text="@string/employment_city"
+                android:textColor="@color/text_dark_black"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/tv_service_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="right"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/small_size" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/common_background_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_all_subscribe_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_work_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/ic_star"
+                android:drawablePadding="5dp"
+                android:text="@string/subscribe_start_time"
+                android:textColor="@color/text_dark_black"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/tv_work_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/please_select"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/small_size" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/common_background_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_star"
+            android:drawablePadding="5dp"
+            android:text="@string/payment_cycle"
+            android:textColor="@color/text_dark_black"
+            android:textSize="@dimen/small_size" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tag_flow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.zhy.view.flowlayout.TagFlowLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/common_background_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_all_employment_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_employment_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@mipmap/ic_star"
+                android:drawablePadding="5dp"
+                android:text="@string/employment_time"
+                android:textColor="@color/text_dark_black"
+                android:textSize="@dimen/small_size" />
+
+            <LinearLayout
+                android:id="@+id/ll_employment_time"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_employment_period_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_employment_time_decrease"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_button_text_color_unable" />
+
+                <LinearLayout
+                    android:id="@+id/ll_employment_time_subclass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_employment_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:text="0"
+                        android:textColor="@color/text_light_black"
+                        android:textSize="@dimen/min_size" />
+
+                    <TextView
+                        android:id="@+id/tv_employment_time_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="次"
+                        android:textColor="@color/text_light_black"
+                        android:textSize="@dimen/min_size" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_button_text_color_unable" />
+
+                <TextView
+                    android:id="@+id/tv_employment_time_increase"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/ll_employment_time"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_payment"
+                    android:textColor="@color/text_dark_black"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/tv_employment_time_service_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme_orange"
+                    android:textSize="@dimen/small_size"
+                    tools:text="￥3000" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/common_background_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_all_employment_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_employment_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@mipmap/ic_star"
+                android:drawablePadding="5dp"
+                android:text="@string/employment_period"
+                android:textColor="@color/text_dark_black"
+                android:textSize="@dimen/small_size" />
+
+            <LinearLayout
+                android:id="@+id/ll_employment_period"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_employment_period_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_decrease"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_button_text_color_unable" />
+
+                <LinearLayout
+                    android:id="@+id/ll_employment_period_subclass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_employment_period"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:text="0"
+                        android:textColor="@color/text_light_black"
+                        android:textSize="@dimen/min_size" />
+
+                    <TextView
+                        android:id="@+id/tv_employment_period_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_light_black"
+                        android:textSize="@dimen/min_size"
+                        tools:text="天" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_button_text_color_unable" />
+
+                <TextView
+                    android:id="@+id/tv_increase"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_service_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/ll_employment_period"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_payment"
+                    android:textColor="@color/text_dark_black"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/tv_service_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme_orange"
+                    android:textSize="@dimen/small_size"
+                    tools:text="￥3000" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/common_background_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_employment_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_aggregate_demand_budget"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/ic_star"
+                android:drawablePadding="5dp"
+                android:text="@string/employment_price"
+                android:textColor="@color/text_dark_black"
+                android:textSize="@dimen/small_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_aggregate_demand_budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/please_fill_in"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textColor="@color/text_dark_black"
+                    android:textColorHint="@color/text_light_black"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/yuan"
+                    android:textColor="@color/text_light_black"
+                    android:textSize="@dimen/small_size" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/common_background_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_demand_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_demand_introduction_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/ic_star" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="500"
+                        android:text="@string/demand_introduction"
+                        android:textColor="@color/text_dark_black"
+                        android:textSize="@dimen/small_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_see_example"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/see_example"
+                    android:textColor="@color/theme_orange"
+                    android:textSize="@dimen/small_size"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_demand_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="@string/demand_introduction_hint_text"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/text_dark_black"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/tv_demand_introduction_number_of_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="0/500"
+                android:textColor="@color/text_light_black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_background_color" />
+
+</LinearLayout>

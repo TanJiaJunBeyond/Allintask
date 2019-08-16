@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/ic_star"
+        android:drawablePadding="5dp"
+        android:text="标题"
+        android:textColor="@color/text_dark_black"
+        android:textSize="@dimen/small_size" />
+
+    <TextView
+        android:id="@+id/tv_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_dark_gray"
+        android:textSize="@dimen/small_size" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/tv_unit"
+        android:layout_toRightOf="@id/tv_title"
+        android:background="@null"
+        android:gravity="right|center_vertical"
+        android:hint="@string/please_write"
+        android:inputType="numberDecimal"
+        android:maxLength="20"
+        android:textColor="@color/text_dark_black"
+        android:textColorHint="@color/hint_text_color"
+        android:textSize="@dimen/small_size" />
+
+</RelativeLayout>

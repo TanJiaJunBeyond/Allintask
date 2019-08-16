@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_tag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/selector_select_skills_tag_flow_layout_background_color"
+    android:paddingBottom="9dp"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:paddingTop="9dp"
+    android:textColor="@drawable/selector_select_skills_tag_flow_layout_text_color"
+    android:textSize="@dimen/min_size">
+
+</TextView>

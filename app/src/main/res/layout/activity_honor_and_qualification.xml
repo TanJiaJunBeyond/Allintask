@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <include layout="@layout/include_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/awards_or_certificate"
+            android:textColor="@color/text_dark_black"
+            android:textSize="@dimen/small_size" />
+
+        <EditText
+            android:id="@+id/et_awards_or_certificate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:background="@null"
+            android:hint="@string/please_input_awards_name_or_certificate_name"
+            android:maxLength="20"
+            android:textColor="@color/text_dark_black"
+            android:textColorHint="@color/text_dark_gray"
+            android:textSize="@dimen/small_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/issuing_authority"
+            android:textColor="@color/text_dark_black"
+            android:textSize="@dimen/small_size" />
+
+        <EditText
+            android:id="@+id/et_issuing_authority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="@null"
+            android:hint="@string/please_input_issuing_authority"
+            android:maxLength="20"
+            android:textColor="@color/text_dark_black"
+            android:textColorHint="@color/text_dark_gray"
+            android:textSize="@dimen/small_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_acquisition_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acquisition_time"
+            android:textColor="@color/text_dark_black"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:id="@+id/tv_acquisition_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:text="@string/please_select_acquisition_time"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/small_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/remove"
+        android:textColor="@color/text_dark_black"
+        android:textSize="@dimen/small_size" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/selector_common_button_background_color"
+        android:text="@string/save"
+        android:textColor="@drawable/selector_common_button_text_color" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_guide_third" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13" />
+
+        <Button
+            android:id="@+id/btn_experience_at_once"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_common_button_background"
+            android:text="@string/experience_at_once"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

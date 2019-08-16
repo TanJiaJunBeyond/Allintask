@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/common_background_color">
+
+    <include layout="@layout/include_toolbar" />
+
+    <com.allintask.lingdao.widget.EaseChatInputMenu
+        android:id="@+id/ease_chat_input_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ease_chat_input_menu"
+        android:layout_below="@id/toolbar">
+
+        <com.allintask.lingdao.widget.EaseChatMessageList
+            android:id="@+id/ease_chat_message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.allintask.lingdao.widget.EaseVoiceRecorderView
+            android:id="@+id/ease_voice_recorder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

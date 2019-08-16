@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <include layout="@layout/include_divider_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="你当前的邮箱为"
+        android:textColor="@color/text_dark_black"
+        android:textSize="@dimen/small_size" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_mailbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_orange"
+            android:textSize="@dimen/small_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="更换后所有信息都改变"
+            android:textColor="@color/text_dark_black"
+            android:textSize="@dimen/small_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <com.allintask.lingdao.widget.EditTextWithDelete
+            android:id="@+id/etwd_mailbox"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/shape_login_edit_text_background"
+            android:drawableLeft="@mipmap/ic_mailbox"
+            android:drawablePadding="15dp"
+            android:hint="@string/please_input_mailbox"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textColor="@color/text_light_black"
+            android:textColorHint="@color/hint_text_color"
+            android:textSize="@dimen/small_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/ll_phone_number"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_login_edit_text_background"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <com.allintask.lingdao.widget.EditTextWithDelete
+                android:id="@+id/etwd_mailbox_identify_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@mipmap/ic_sms"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:hint="@string/identify_code"
+                android:inputType="number"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_light_black"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="@dimen/small_size" />
+
+            <Button
+                android:id="@+id/btn_get_mailbox_identify_code"
+                android:layout_width="66dp"
+                android:layout_height="28dp"
+                android:background="@drawable/selector_get_sms_identify_code_button_with_radius"
+                android:text="获取"
+                android:textColor="@drawable/selector_common_button_text_color"
+                android:textSize="@dimen/min_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="建议使用企业邮箱绑定"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/min_size" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_modify"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_common_button_background_color"
+        android:text="@string/confirm_modify"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size" />
+
+</LinearLayout>

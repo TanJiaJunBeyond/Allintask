@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_way"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_window_background_color"
+    android:orientation="vertical">
+
+    <com.allintask.lingdao.widget.CommonRecyclerView
+        android:id="@+id/crv_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.allintask.lingdao.widget.CommonRecyclerView>
+
+</LinearLayout>

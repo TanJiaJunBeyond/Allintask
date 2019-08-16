@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar" />
+
+    <com.allintask.lingdao.widget.MultiStatusView
+        android:id="@+id/swipe_refresh_status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        app:msv_empty_view="@layout/status_view_empty"
+        app:msv_status="loading">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.allintask.lingdao.widget.CommonRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.allintask.lingdao.widget.CommonRecyclerView>
+
+            <com.allintask.lingdao.widget.LetterBarView
+                android:id="@+id/letter_bar_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                app:lbv_letter_bar_background="@color/transparent"
+                app:lbv_letter_bar_text_color="@color/text_dark_black"
+                app:lbv_overlay_background="@drawable/letter_bar_view_overlay_background"
+                app:lbv_overlay_text_Color="@color/white"
+                app:lbv_overlay_text_size="@dimen/xlarge_size" />
+
+        </RelativeLayout>
+
+    </com.allintask.lingdao.widget.MultiStatusView>
+
+</RelativeLayout>

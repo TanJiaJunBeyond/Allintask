@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/record_dialog_body"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_record_image_view_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/record_dialog_left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_recording_voice"
+            android:visibility="gone" />
+
+        <com.allintask.lingdao.widget.RecordImageView
+            android:id="@+id/record_dialog_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/record_dialog_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xlarge_size"
+            android:visibility="gone" />
+
+        <!--<android.support.v4.widget.ContentLoadingProgressBar-->
+        <!--android:id="@+id/record_dialog_progress"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="visible" />-->
+
+        <ProgressBar
+            android:id="@+id/animProgress_loading"
+            style="@style/loading_white"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/record_dialog_bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/record_waiting"
+        android:textColor="@color/white"
+        android:textSize="@dimen/min_size"
+        android:visibility="visible" />
+
+</LinearLayout>

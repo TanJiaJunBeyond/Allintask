@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <com.allintask.lingdao.widget.CircleImageView
+            android:id="@+id/civ_head_portrait"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/iv_red_dot"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@mipmap/ic_demand_details_red_dot"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_demand_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="标题"
+        android:textColor="@color/text_red"
+        android:textSize="@dimen/small_size" />
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="30dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/ic_demand_details_header_line"
+        android:visibility="visible" />
+
+</LinearLayout>

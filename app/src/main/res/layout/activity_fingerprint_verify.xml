@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_payment_password_unlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:text="@string/payment_password_unlock"
+        android:textColor="@color/theme_orange"
+        android:textSize="@dimen/small_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_toolbar" />
+
+        <include layout="@layout/include_divider_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="61dp"
+            android:text="@string/fingerprint_verify_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xlarge_size" />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="105dp"
+            android:background="@mipmap/ic_fingerprint" />
+
+        <Button
+            android:id="@+id/btn_click_to_verify_fingerprint"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginRight="68dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/selector_common_button_background_color"
+            android:text="@string/click_to_verify_fingerprint"
+            android:textColor="@drawable/selector_common_button_text_color"
+            android:textSize="@dimen/normal_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

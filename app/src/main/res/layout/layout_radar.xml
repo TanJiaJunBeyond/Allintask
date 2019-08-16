@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_radar_background"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@mipmap/bg_radar" />
+
+    <ImageView
+        android:id="@+id/iv_radar_pointer"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@mipmap/bg_radar_pointer" />
+
+    <RelativeLayout
+        android:id="@+id/rl_radar_head_portrait"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <com.allintask.lingdao.widget.CircleImageView
+            android:id="@+id/civ_left_first"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:alpha="0"
+            android:src="@mipmap/ic_head_portrait" />
+
+        <com.allintask.lingdao.widget.CircleImageView
+            android:id="@+id/civ_right_first"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0"
+            android:src="@mipmap/ic_head_portrait" />
+
+        <com.allintask.lingdao.widget.CircleImageView
+            android:id="@+id/civ_left_second"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:alpha="0"
+            android:src="@mipmap/ic_head_portrait" />
+
+        <com.allintask.lingdao.widget.CircleImageView
+            android:id="@+id/civ_left_third"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"
+            android:alpha="0"
+            android:src="@mipmap/ic_head_portrait" />
+
+        <com.allintask.lingdao.widget.CircleImageView
+            android:id="@+id/civ_left_fourth"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="150dp"
+            android:alpha="0"
+            android:src="@mipmap/ic_head_portrait" />
+
+        <com.allintask.lingdao.widget.CircleImageView
+            android:id="@+id/civ_right_second"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="120dp"
+            android:alpha="0"
+            android:src="@mipmap/ic_head_portrait" />
+
+        <com.allintask.lingdao.widget.CircleImageView
+            android:id="@+id/civ_right_third"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="180dp"
+            android:alpha="0"
+            android:src="@mipmap/ic_head_portrait" />
+
+        <com.allintask.lingdao.widget.CircleImageView
+            android:id="@+id/civ_right_fourth"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="230dp"
+            android:alpha="0"
+            android:src="@mipmap/ic_head_portrait" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

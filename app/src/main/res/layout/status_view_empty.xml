@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_no_data" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/text_dark_gray"
+        android:textSize="@dimen/small_size" />
+
+    <Button
+        android:id="@+id/btn_content"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_recommend_details_button_orange_background"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_size"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_service_management"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_publish_service"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_service_management_empty_view_button_background"
+            android:text="@string/publish_service"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/normal_size" />
+
+        <Button
+            android:id="@+id/btn_complete_resume"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/btn_publish_service"
+            android:background="@drawable/shape_service_management_empty_view_button_background"
+            android:text="@string/complete_resume"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/normal_size" />
+
+        <Button
+            android:id="@+id/btn_add_photos"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btn_publish_service"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_service_management_empty_view_button_background"
+            android:text="@string/add_photos"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/normal_size" />
+
+        <Button
+            android:id="@+id/btn_identity_verification"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btn_complete_resume"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/btn_publish_service"
+            android:background="@drawable/shape_service_management_empty_view_button_background"
+            android:text="@string/identity_verification"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/normal_size" />
+
+    </RelativeLayout>
+
+</LinearLayout>

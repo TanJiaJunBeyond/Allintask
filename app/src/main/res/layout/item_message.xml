@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_itease_layout"
+    android:background="#fff"
+    android:gravity="center_vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/avatar_container"
+        android:layout_width="150px"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            />
+
+        <TextView
+            android:id="@+id/unread_msg_number"
+            android:layout_width="35px"
+            android:layout_height="35px"
+            android:layout_marginTop="20px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ease_unread_count_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="30px"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar_container"
+        android:layout_marginLeft="30px"
+        android:layout_marginStart="30px"
+        android:layout_toEndOf="@+id/avatar_container"
+        android:layout_toRightOf="@+id/avatar_container"
+        android:text="系统通知"
+        android:textColor="#333333"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="5px"
+        android:text="你有一条新消息"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/avatar_container"
+        android:layout_alignLeft="@+id/message"
+        android:layout_alignStart="@+id/message"
+        android:text="20:30"
+        android:textSize="20px" />
+
+    <ImageView
+        android:id="@+id/msg_state"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignTop="@+id/message"
+        android:layout_toEndOf="@+id/avatar_container"
+        android:layout_toLeftOf="@+id/message"
+        android:layout_toRightOf="@+id/avatar_container"
+        android:layout_toStartOf="@+id/message"
+        android:src="@drawable/ease_msg_state_fail_resend" />
+    <View
+
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/avatar_container"
+        android:layout_marginTop="30px" />
+
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/avatar_container"-->
+    <!--android:layout_width="59dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentLeft="true" >-->
+
+    <!--<com.hyphenate.easeui.widget.EaseImageView-->
+    <!--android:id="@+id/avatar"-->
+    <!--android:layout_width="45dp"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/ease_default_avatar" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/unread_msg_number"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="2dp"-->
+    <!--android:layout_marginTop="3dp"-->
+    <!--android:background="@drawable/ease_unread_count_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="12sp" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="7dp"-->
+    <!--android:layout_marginTop="6dp"-->
+    <!--android:layout_toRightOf="@id/avatar_container"-->
+    <!--android:textColor="@color/list_itease_primary_color"-->
+    <!--android:textSize="16sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/time"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="7dp"-->
+    <!--android:layout_marginTop="6dp"-->
+    <!--android:textColor="@color/list_itease_secondary_color"-->
+    <!--android:textSize="13sp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/msg_state"-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_marginLeft="7dp"-->
+    <!--android:layout_toRightOf="@id/avatar_container"-->
+    <!--android:src="@drawable/ease_msg_state_fail_resend"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<TextView -->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="14sp"-->
+    <!--android:text="@string/were_mentioned"-->
+    <!--android:textColor="#e84e40"-->
+    <!--android:id="@+id/mentioned"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_toRightOf="@id/msg_state"-->
+    <!--android:paddingTop="7dp"-->
+    <!--android:paddingBottom="7dp"-->
+    <!--android:paddingLeft="7dp"-->
+    <!--android:visibility="gone"-->
+    <!--/>-->
+    <!---->
+    <!--<TextView-->
+    <!--android:id="@+id/message"-->
+    <!--android:layout_toLeftOf="@id/time"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_toRightOf="@id/mentioned"-->
+    <!--android:singleLine="true"-->
+    <!--android:ellipsize="end"-->
+    <!--android:padding="7dp"-->
+    <!--android:textColor="@color/list_itease_secondary_color"-->
+    <!--android:textSize="14sp" />-->
+
+</RelativeLayout>

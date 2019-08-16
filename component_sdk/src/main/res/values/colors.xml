@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="dark_gray">#555555</color>
+    <color name="light_white">#e7e7e7</color>
+    <color name="theme_orange">#ff7c0d</color>
+
+    <color name="divider_line_gray">#cccccc</color>
+
+    <color name="text_light_black">#666666</color>
+    <color name="text_dark_black">#333333</color>
+
+</resources>

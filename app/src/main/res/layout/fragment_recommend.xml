@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/theme_orange"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/title_geo"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="全国"
+                android:textSize="@dimen/min_size"
+                android:visibility="gone" />
+
+            <com.allintask.lingdao.widget.SearchView
+                android:id="@+id/sv_service_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_search_view_orange_background"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:transitionName="service_content_search_view"
+                app:imagewidth="11dp"
+                app:sv_search_icon_resource_id="@mipmap/ic_search_white"
+                app:textColor="@color/white"
+                app:textSize="@dimen/min_size" />
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/title_menu"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="@string/category"
+                android:textSize="@dimen/min_size"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/coordinator_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/app_bar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    android:fitsSystemWindows="true"
+                    android:minHeight="40dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_scrollFlags="scroll">
+
+                        <cn.bingoogolapple.bgabanner.BGABanner
+                            android:id="@+id/bga_banner"
+                            style="@style/BannerDefaultStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="124dp"
+                            app:banner_pointAutoPlayInterval="2000"
+                            app:banner_pointContainerBackground="@android:color/transparent"
+                            app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+                            app:banner_transitionEffect="alpha" />
+
+                        <!--<android.support.v7.widget.RecyclerView-->
+                        <!--android:id="@+id/rv_recommend_grid"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/white"></android.support.v7.widget.RecyclerView>-->
+
+                        <com.allintask.lingdao.widget.CommonViewPager
+                            android:id="@+id/view_pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></com.allintask.lingdao.widget.CommonViewPager>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="@color/common_background_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_recommend_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_lobby"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginLeft="16dp"
+                                android:src="@mipmap/ic_change_lobby" />
+
+                            <TextView
+                                android:id="@+id/tv_lobby_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@id/iv_lobby"
+                                android:text="@string/demand_lobby_title"
+                                android:textColor="@color/text_dark_black"
+                                android:textSize="@dimen/small_size" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_lobby"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical|right"
+                                android:orientation="horizontal"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp">
+
+                                <TextView
+                                    android:id="@+id/tv_change_lobby"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/change_service_lobby"
+                                    android:textColor="@color/theme_orange"
+                                    android:textSize="@dimen/small_size" />
+
+                                <ImageView
+                                    android:id="@+id/iv_change_lobby"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="7dp"
+                                    android:src="@mipmap/ic_arrow_down_orange" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="@color/common_background_color"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_recommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_publish_recently"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="16dp"
+                                android:gravity="center"
+                                android:text="@string/publish_recently"
+                                android:textColor="@color/theme_orange"
+                                android:textSize="@dimen/normal_size" />
+
+                            <TextView
+                                android:id="@+id/tv_intelligent_recommendation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="@string/intelligent_recommendation"
+                                android:textColor="@color/text_light_black"
+                                android:textSize="@dimen/normal_size" />
+
+                            <TextView
+                                android:id="@+id/tv_advanced_filter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/button_bg"
+                                android:gravity="center"
+                                android:text="@string/advanced_filter"
+                                android:textColor="@color/text_light_black"
+                                android:textSize="@dimen/normal_size" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.design.widget.AppBarLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <com.allintask.lingdao.widget.CommonRecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/common_background_color"></com.allintask.lingdao.widget.CommonRecyclerView>
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:id="@+id/nested_scroll_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="30dp"
+                                android:text="@string/no_data"
+                                android:textColor="@color/text_dark_black"
+                                android:textSize="@dimen/normal_size" />
+
+                        </RelativeLayout>
+
+                    </android.support.v4.widget.NestedScrollView>
+
+                </RelativeLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="2dp"
+        android:src="@mipmap/ic_publish" />
+
+</RelativeLayout>

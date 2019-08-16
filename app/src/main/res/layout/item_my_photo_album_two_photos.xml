@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="11dp">
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:textColor="@color/text_dark_black"
+        android:textSize="@dimen/mid_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="3dp"
+        android:text="十一月"
+        android:textColor="@color/text_dark_black"
+        android:textSize="@dimen/min_size" />
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="18dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_first_photo"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/iv_second_photo"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_photo_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="图片描述"
+            android:textColor="@color/text_dark_black"
+            android:textSize="@dimen/min_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="63dp"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_recommend_tag_background"
+                android:gravity="center"
+                android:textColor="@color/my_photo_album_service_category_text_color"
+                android:textSize="@dimen/min_size" />
+
+            <TextView
+                android:id="@+id/tv_photo_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_title"
+                android:text="@string/photo_album_two_photos"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/min_size" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

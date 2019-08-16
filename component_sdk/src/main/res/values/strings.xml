@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">TanJiaJunSDK</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- ListView -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松手开始刷新</string>
+    <string name="xlistview_header_hint_loading">加载...</string>
+    <string name="xlistview_header_last_time">最近一次更新在：</string>
+    <string name="xlistview_footer_hint_normal">更多</string>
+    <string name="xlistview_footer_hint_ready">松手开始更新</string>
+
+</resources>

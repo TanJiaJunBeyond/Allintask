@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_service_management_first_enter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/theme_orange"
+            android:gravity="center"
+            android:text="@string/service_manage_first_enter_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mid_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="34dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:background="@drawable/shape_white_circle_with_orange_stroke"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/theme_orange"
+                android:textSize="@dimen/normal_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="@string/service_manage_first_enter_first_content"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/small_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="31dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:background="@drawable/shape_white_circle_with_orange_stroke"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/theme_orange"
+                android:textSize="@dimen/normal_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="@string/service_manage_first_enter_second_content"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/small_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="31dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:background="@drawable/shape_white_circle_with_orange_stroke"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/theme_orange"
+                android:textSize="@dimen/normal_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="@string/service_manage_first_enter_third_content"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/small_size" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_know"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="95dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_common_button_background"
+            android:text="@string/know"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

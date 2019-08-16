@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <include layout="@layout/include_divider_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_background_color"
+            android:paddingBottom="21dp"
+            android:paddingTop="21dp">
+
+            <Button
+                android:id="@+id/btn_submit_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/selector_common_button_background_color"
+                android:text="@string/submit_evaluation"
+                android:textColor="@drawable/selector_common_button_text_color"
+                android:textSize="@dimen/normal_size" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/comprehensive_assessment"
+                    android:textColor="@color/text_dark_black"
+                    android:textSize="@dimen/mid_size" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical">
+
+                    <RatingBar
+                        android:id="@+id/rb_overall_merit"
+                        style="@style/EvaluateRatingBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:numStars="5"
+                        android:stepSize="1" />
+
+                    <TextView
+                        android:id="@+id/tv_overall_merit_evaluate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/rb_overall_merit"
+                        android:text="好评"
+                        android:textColor="@color/text_light_black"
+                        android:textSize="@dimen/small_size" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_evaluate_facilitator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/service_evaluate"
+                        android:textColor="@color/text_dark_black"
+                        android:textSize="@dimen/normal_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_complete_on_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/complete_on_time"
+                            android:textColor="@color/text_light_black"
+                            android:textSize="@dimen/small_size" />
+
+                        <RatingBar
+                            android:id="@+id/rb_complete_on_time"
+                            style="@style/EvaluateRatingBarStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/tv_complete_on_time"
+                            android:stepSize="1" />
+
+                        <TextView
+                            android:id="@+id/tv_complete_on_time_evaluate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/rb_complete_on_time"
+                            android:text="好评"
+                            android:textColor="@color/text_light_black"
+                            android:textSize="@dimen/small_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_work_quality"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/work_quality"
+                            android:textColor="@color/text_light_black"
+                            android:textSize="@dimen/small_size" />
+
+                        <RatingBar
+                            android:id="@+id/rb_work_quality"
+                            style="@style/EvaluateRatingBarStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/tv_work_quality"
+                            android:stepSize="1" />
+
+                        <TextView
+                            android:id="@+id/tv_work_quality_evaluate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/rb_work_quality"
+                            android:text="好评"
+                            android:textColor="@color/text_light_black"
+                            android:textSize="@dimen/small_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_service_integrity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/service_integrity"
+                            android:textColor="@color/text_light_black"
+                            android:textSize="@dimen/small_size" />
+
+                        <RatingBar
+                            android:id="@+id/rb_service_integrity"
+                            style="@style/EvaluateRatingBarStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/tv_service_integrity"
+                            android:stepSize="1" />
+
+                        <TextView
+                            android:id="@+id/tv_service_integrity_evaluate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/rb_service_integrity"
+                            android:gravity="right"
+                            android:text="好评"
+                            android:textColor="@color/text_light_black"
+                            android:textSize="@dimen/small_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/evaluation_content"
+                    android:textColor="@color/text_dark_black"
+                    android:textSize="@dimen/normal_size" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="143dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_common_edit_text_background">
+
+                    <TextView
+                        android:id="@+id/tv_number_of_words"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape_recommend_tag_background"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="3dp"
+                        android:text="0/100"
+                        android:textColor="@color/text_light_black"
+                        android:textSize="@dimen/min_size" />
+
+                    <EditText
+                        android:id="@+id/et_evaluation_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/tv_number_of_words"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:maxLength="100"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/text_dark_black"
+                        android:textSize="@dimen/small_size" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

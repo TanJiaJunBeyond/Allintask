@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_window_background_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tv_click_to_change_demand_or_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/click_to_change_demand_or_service"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mid_size" />
+
+        <Button
+            android:id="@+id/btn_guide_change"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="139dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/tv_click_to_change_demand_or_service"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/shape_transparency_button_background"
+            android:text="@string/change_to_find_service"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mid_size" />
+
+        <ImageView
+            android:id="@+id/iv_curve"
+            android:layout_width="95dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="85dp"
+            android:layout_toRightOf="@id/btn_guide_change"
+            android:background="@mipmap/ic_curve" />
+
+        <LinearLayout
+            android:id="@+id/ll_guide_lobby"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="85dp"
+            android:layout_toRightOf="@id/iv_curve"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/tv_guide_change_lobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_service_lobby"
+                android:textColor="@color/theme_orange"
+                android:textSize="@dimen/small_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:src="@mipmap/ic_arrow_down_orange" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

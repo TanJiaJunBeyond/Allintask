@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--状态栏-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/theme_orange</item>
+        <item name="android:textColor">@color/c_defult</item>
+        <!--<item name="android:windowExitTransition">@transition/main_exit</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!-- 开启过渡效果 -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowReturnTransition">@transition/transition_exit</item>
+        <item name="android:windowEnterTransition">@transition/transition_enter</item>
+    </style>
+
+    <!--(1)setExitTransition() - 当A startB时，使A中的View退出场景的transition    在A中设置-->
+    <!--(2)setEnterTransition() - 当A startB时，使B中的View进入场景的transition    在B中设置-->
+    <!--(3)setReturnTransition() - 当B 返回A时，使B中的View退出场景的transition  在B中设置-->
+    <!--(4)setReenterTransition() - 当B 返回A时，使A中的View进入场景的transition   在A中设置-->
+    <style name="AppTheme.AnimeDetail">
+        <item name="android:windowReturnTransition">@transition/transition_exit</item>
+        <item name="android:windowEnterTransition">@transition/transition_enter</item>
+    </style>
+
+    <style name="base_line_width">
+        <item name="android:background">@color/c_dcdcdc</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+
+    <style name="BannerDefaultStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <!-- 自定义属性在styles.xml中不需要命名空间,直接用属性名就可以了 -->
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">true</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">1000</item>
+        <!-- 指示点容器背景 -->
+        <item name="banner_pointContainerBackground">#44aaaaaa</item>
+        <!-- 指示点背景 -->
+        <item name="banner_pointDrawable">@drawable/bga_banner_selector_point_hollow</item>
+        <!-- 指示点容器左右内间距 -->
+        <item name="banner_pointContainerLeftRightPadding">10dp</item>
+        <!-- 指示点上下外间距 -->
+        <item name="banner_pointTopBottomMargin">6dp</item>
+        <!-- 指示点左右外间距 -->
+        <item name="banner_pointLeftRightMargin">3dp</item>
+        <!-- 指示器的位置 -->
+        <item name="banner_indicatorGravity">bottom|center_horizontal</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">800</item>
+        <!-- 提示文案的文字大小 -->
+        <item name="banner_tipTextSize">10sp</item>
+        <!-- 提示文案的文字颜色 -->
+        <item name="banner_tipTextColor">@android:color/white</item>
+        <!-- 加载网络数据时覆盖在BGABanner最上层的占位图 -->
+        <item name="banner_placeholderDrawable">@drawable/bg_banner_default</item>
+    </style>
+
+</resources>

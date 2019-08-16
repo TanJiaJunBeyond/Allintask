@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.0'
+    defaultConfig {
+        applicationId "com.allintask.lingdao"
+        minSdkVersion 16
+        targetSdkVersion 26
+        multiDexEnabled true
+        versionCode 8
+        versionName "1.0.7"
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    // use legacy for android 6.0
+    useLibrary 'org.apache.http.legacy'
+
+    signingConfigs {
+        release {
+            storeFile file("keystore.jks")
+            storePassword "allintask2018"
+            keyAlias "lingdao"
+            keyPassword "allintask2018"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        official {}
+        qihu360 {}
+        baidu {}
+        yingyongbao {}
+        PP {}
+        xiaomi {}
+        huawei {}
+        meizu {}
+        wandoujia {}
+        other01 {}
+        other02 {}
+        vivo {}
+        leshi {}
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                // 输出apk名称如：Allintask_v1.0.0_wandoujia.apk
+                def fileName = "Allintask_v${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+}
+
+def appcompatSupportVersion = '26.0.0'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile project(':basic_sdk')
+    compile project(':component_sdk')
+    compile project(':conn_sdk')
+
+    compile files('libs/alipaySdk-20170725.jar')
+
+    compile "com.android.support:multidex:1.0.0"
+    compile "com.android.support:design:$appcompatSupportVersion"
+    compile "com.android.support:appcompat-v7:$appcompatSupportVersion"
+    compile "com.android.support:recyclerview-v7:$appcompatSupportVersion"
+    compile "com.android.support:cardview-v7:$appcompatSupportVersion"
+
+    /** 注解框架: ButterKnife   */
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    compile 'com.parse:parse-android:1.13.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'cn.bingoogolapple:bga-banner:2.1.8@aar'
+    compile 'com.hyman:flowlayout-lib:1.1.2'
+    compile 'com.google.android:flexbox:0.2.6'
+    compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3'
+
+    // 高德地图
+    compile 'com.amap.api:location:latest.integration'
+
+    // 友盟
+    compile 'com.umeng.sdk:common:latest.integration'
+    compile 'com.umeng.sdk:analytics:latest.integration'
+
+    compile 'com.contrarywind:Android-PickerView:4.1.3'
+}

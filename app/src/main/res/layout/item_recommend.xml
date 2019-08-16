@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.allintask.lingdao.widget.CircleImageView
+            android:id="@+id/civ_head_portrait"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:transitionName="head_portrait_circle_image_view" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/civ_head_portrait"
+            android:layout_toRightOf="@id/civ_head_portrait"
+            android:textSize="@dimen/small_size"
+            tools:text="姓名" />
+
+        <TextView
+            android:id="@+id/tv_specialist_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_name"
+            android:background="@drawable/shape_recommend_tag_orange_background"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10sp"
+            tools:text="@string/specialist_recommend" />
+
+        <ImageView
+            android:id="@+id/iv_specialist_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_specialist_recommend"
+            android:scaleType="fitStart"
+            tools:src="@mipmap/ic_default" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/civ_head_portrait"
+            android:layout_toRightOf="@id/civ_head_portrait"
+            android:background="@drawable/edit_corner_gray"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/text_size_10sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_service_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_first_service_photo"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_second_service_photo"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="3dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_third_service_photo"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="3dp"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_orange"
+            android:textSize="@dimen/normal_size" />
+
+        <TextView
+            android:id="@+id/tv_number_of_people_seeing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/min_size" />
+
+        <TextView
+            android:id="@+id/tv_service_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/min_size" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/theme_orange"
+            android:textSize="@dimen/normal_size" />
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_orange"
+            android:textSize="@dimen/normal_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_advantage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/text_dark_black"
+        android:textSize="@dimen/min_size" />
+
+    <com.allintask.lingdao.widget.FlowLayout
+        android:id="@+id/flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        app:fl_horizontalChildGap="12dp"
+        app:fl_isDistributionWhiteSpacing="false"
+        app:fl_verticalChildGap="5dp">
+
+    </com.allintask.lingdao.widget.FlowLayout>
+
+</LinearLayout>

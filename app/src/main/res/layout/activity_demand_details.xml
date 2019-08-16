@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <include layout="@layout/include_divider_line" />
+
+    <com.allintask.lingdao.widget.MultiStatusView
+        android:id="@id/swipe_refresh_status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_empty_view="@layout/status_view_empty"
+        app:msv_status="loading">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/include_divider_line" />
+
+                    <Button
+                        android:id="@+id/btn_status"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/selector_common_button_background_color"
+                        android:textColor="@drawable/selector_common_button_text_color"
+                        android:textSize="@dimen/normal_size"
+                        tools:text="@string/bid_to_make_money" />
+
+                </LinearLayout>
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/ll_bottom"
+                    android:layout_below="@id/view_divider_line">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="20dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_category_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/theme_orange"
+                                    android:textSize="@dimen/normal_size"
+                                    tools:text="业务" />
+
+                                <TextView
+                                    android:id="@+id/tv_demand_status"
+                                    android:layout_width="60dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:background="@drawable/shape_demand_status_background"
+                                    android:gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/small_size"
+                                    tools:text="竞标中" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_has_bid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="25dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/demand_details_has_bid"
+                                        android:textColor="@color/text_light_black"
+                                        android:textSize="@dimen/small_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_has_bid"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:textColor="@color/theme_orange"
+                                        android:textSize="@dimen/small_size"
+                                        tools:text="10" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_has_pay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="25dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/demand_details_has_pay"
+                                        android:textColor="@color/text_light_black"
+                                        android:textSize="@dimen/small_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_has_pay"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:textColor="@color/theme_orange"
+                                        android:textSize="@dimen/small_size"
+                                        tools:text="10" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_has_browse"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/demand_details_has_browse"
+                                        android:textColor="@color/text_light_black"
+                                        android:textSize="@dimen/small_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_has_browse"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:textColor="@color/theme_orange"
+                                        android:textSize="@dimen/small_size"
+                                        tools:text="10" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_publish_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="25dp"
+                                    android:textColor="@color/text_dark_gray"
+                                    android:textSize="@dimen/min_size"
+                                    tools:text="1个月前发布" />
+
+                                <TextView
+                                    android:id="@+id/tv_expired_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/text_dark_gray"
+                                    android:textSize="@dimen/min_size"
+                                    tools:text="30天后过期" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_service_way"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="25dp"
+                                    android:drawableLeft="@mipmap/ic_service_way"
+                                    android:drawablePadding="5dp"
+                                    android:textColor="@color/text_light_black"
+                                    android:textSize="@dimen/min_size"
+                                    tools:text="远程雇佣" />
+
+                                <TextView
+                                    android:id="@+id/tv_budget"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@mipmap/ic_budget"
+                                    android:drawablePadding="5dp"
+                                    android:textColor="@color/text_light_black"
+                                    android:textSize="@dimen/min_size"
+                                    tools:text="￥3000预算" />
+
+                                <ImageView
+                                    android:id="@+id/iv_trusteeship"
+                                    android:layout_width="32dp"
+                                    android:layout_height="26dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:background="@mipmap/ic_trusteeship" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="@color/common_background_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:paddingBottom="17dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="17dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@mipmap/ic_demand_publisher"
+                                android:drawablePadding="5dp"
+                                android:text="@string/demand_publisher"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/small_size" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="17dp"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <com.allintask.lingdao.widget.CircleImageView
+                                        android:id="@+id/civ_head_portrait"
+                                        android:layout_width="53dp"
+                                        android:layout_height="53dp"
+                                        tools:src="@mipmap/ic_head_portrait" />
+
+                                    <ImageView
+                                        android:layout_width="12dp"
+                                        android:layout_height="12dp"
+                                        android:layout_marginLeft="41dp"
+                                        android:layout_marginTop="41dp"
+                                        android:src="@mipmap/ic_vip"
+                                        android:visibility="gone" />
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="18dp"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/tv_time"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginLeft="5dp"
+                                            android:background="@drawable/edit_corner_gray"
+                                            android:paddingBottom="3dp"
+                                            android:paddingLeft="5dp"
+                                            android:paddingRight="5dp"
+                                            android:paddingTop="3dp"
+                                            android:textColor="@color/text_dark_gray"
+                                            android:textSize="@dimen/text_size_10sp"
+                                            tools:text="1小时前来过" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_toLeftOf="@id/tv_time"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tv_name"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/small_size"
+                                                tools:text="姓名" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="15dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/small_size"
+                                                android:visibility="gone"
+                                                tools:text="HR" />
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/tv_company"
+                                        android:layout_width="11dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:textColor="@color/text_light_black"
+                                        android:textSize="@dimen/small_size"
+                                        android:visibility="gone"
+                                        tools:text="广州领到信息科技有限公司" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="@color/common_background_color" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_demand_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingTop="15dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@mipmap/ic_demand_description"
+                                    android:drawablePadding="5dp"
+                                    android:text="@string/demand_description"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/small_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_demand_description"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginTop="10dp"
+                                    android:lineSpacingExtra="10dp"
+                                    android:textColor="@color/text_light_black"
+                                    android:textSize="@dimen/min_size"
+                                    tools:text="平台运营：amazin" />
+
+                            </LinearLayout>
+
+                            <include layout="@layout/include_divider_line" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_service_site"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingTop="15dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@mipmap/ic_service_site"
+                                    android:drawablePadding="5dp"
+                                    android:text="@string/employment_site"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/small_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_service_site"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:textColor="@color/text_light_black"
+                                    android:textSize="@dimen/min_size"
+                                    tools:text="广东省广州市" />
+
+                            </LinearLayout>
+
+                            <include layout="@layout/include_divider_line" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_subscribe_start_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingTop="15dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@mipmap/ic_demand_publisher"
+                                    android:drawablePadding="5dp"
+                                    android:text="@string/subscribe_start_time"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/small_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_subscribe_start_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:textColor="@color/text_light_black"
+                                    android:textSize="@dimen/min_size"
+                                    tools:text="2017/12/12 09:00" />
+
+                            </LinearLayout>
+
+                            <include layout="@layout/include_divider_line" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_delivery_cycle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingTop="15dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@mipmap/ic_delivery_cycle"
+                                    android:drawablePadding="5dp"
+                                    android:text="@string/employment_period"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/small_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_delivery_cycle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:textColor="@color/text_light_black"
+                                    android:textSize="@dimen/min_size"
+                                    tools:text="30天内" />
+
+                            </LinearLayout>
+
+                            <include layout="@layout/include_divider_line" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_demand_introduction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingTop="15dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@mipmap/ic_demand_introduction"
+                                    android:drawablePadding="5dp"
+                                    android:text="@string/employer_demand_details_demand_introduction"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/small_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_demand_introduction"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginTop="10dp"
+                                    android:lineSpacingExtra="10dp"
+                                    android:textColor="@color/text_light_black"
+                                    android:textSize="@dimen/min_size"
+                                    tools:text="需求介绍" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v4.widget.NestedScrollView>
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </com.allintask.lingdao.widget.MultiStatusView>
+
+</LinearLayout>

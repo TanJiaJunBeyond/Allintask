@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<slide  android:slideEdge="bottom" android:duration="500">-->
+    <!--<targets>-->
+    <!--<target android:targetId="@id/scroll_view"/>-->
+
+
+    <!--</targets>-->
+    <!--</slide>-->
+    <fade android:duration="300">
+        <targets>
+
+        </targets>
+    </fade>
+    <explode android:duration="300">
+
+        <targets>
+            <target android:excludeId="@id/ll_search_title" />
+            <target android:excludeId="@id/search_view" />
+            <target android:excludeId="@id/ll_search_history" />
+            <!--<target android:excludeId="@android:id/statusBarBackground" />-->
+            <!--<target android:excludeId="@android:id/navigationBarBackground"/> &lt;!&ndash; 状态栏 和导航栏要忽略掉。 不然会有闪烁&ndash;&gt;-->
+        </targets>
+    </explode>
+
+
+</transitionSet>

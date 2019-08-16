@@ -1,0 +1,1105 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 通用 -->
+    <string name="app_name">领到雇佣</string>
+
+    <string name="press_again_to_close_application">再按一次退出</string>
+    <string name="error_network">网络错误，请检查网络是否连接</string>
+    <string name="loading_pb_title">正在更新数据</string>
+    <string name="last_page">已经是最后一页了</string>
+    <string name="swipe_refresh_counts">加载了%1$s条数据</string>
+    <string name="error_no_login">尚未登录</string>
+    <string name="resend_identify_code">重发验证码</string>
+    <string name="resend_after_seconds">%1$d秒后重发</string>
+    <string name="notify_title">提示</string>
+    <string name="notify_message">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="no_data">暂无数据</string>
+
+    <!-- 状态 -->
+    <string name="state_loading">正在加载&#8230;</string>
+    <string name="state_loading_more">加载更多</string>
+    <string name="state_loading_error">加载失败，请重新加载</string>
+    <string name="state_not_more">我是有底线的~~</string>
+    <string name="state_not_data">暂无数据</string>
+    <string name="state_not_network_error">请检查网络</string>
+    <string name="state_network_request_error">网络请求失败</string>
+    <string name="state_refreshing">正在刷新</string>
+    <string name="state_submit">正在处理</string>
+    <string name="state_load_error_click_to_refresh">数据加载失败，请点击重新加载</string>
+
+    <!-- 用户 -->
+    <string name="wechat_login_content">手机绑定微信后，下次直接用微信登录</string>
+    <string name="qq_login_content">手机绑定QQ后，下次直接用QQ登录</string>
+    <string name="sms_identify_code">短信验证码</string>
+    <string name="get">获取</string>
+    <string name="password_login">密码登录</string>
+    <string name="sms_identify_code_login">验证码登录</string>
+    <string name="login_and_agree">登录表示同意</string>
+    <string name="allintask_user_agreement">《allintask用户协议》</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="login">登录</string>
+    <string name="bind">绑定</string>
+    <string name="please_input_phone_number">请输入手机号码</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="phone_number_home_location">手机号归属地</string>
+    <string name="common">常用</string>
+    <string name="set_new_password">设置新密码</string>
+    <string name="confirm_new_password">确认新密码</string>
+    <string name="confirm_set">确认设置</string>
+    <string name="complete_information">完善资料</string>
+    <string name="complete_later">以后再填</string>
+    <string name="skip">跳过</string>
+    <string name="hot_skills">热门技能</string>
+    <string name="one_key_experience">一键体验</string>
+    <string name="guess_you_need_to">猜你需要</string>
+    <string name="upload_album">上传相册</string>
+    <string name="uploading">正在上传</string>
+    <string name="upload_fail">上传失败</string>
+    <string name="please_input_new_phone_number">请输入新的手机号码</string>
+
+    <!-- 首页 -->
+    <string name="recommend">推荐</string>
+    <string name="demand_management">需求管理</string>
+    <string name="message">消息</string>
+    <string name="service_management">服务管理</string>
+    <string name="mine">我的</string>
+
+    <!-- 搜索 -->
+    <string name="everybody_search">大家都在搜</string>
+    <string name="search_history">搜索历史</string>
+    <string name="clear">清空</string>
+    <string name="reset">重置</string>
+    <string name="all_category">全部分类</string>
+
+    <!-- 推荐 -->
+    <string name="nationwide">全国</string>
+    <string name="all">全部</string>
+    <string name="category">分类</string>
+    <string name="strategies_to_make_money">赚钱攻略</string>
+    <string name="intelligent_recommendation">最近来过</string>
+    <string name="publish_recently">最新发布</string>
+    <string name="advanced_filter">高级筛选</string>
+    <string name="demand_lobby_title">需求</string>
+    <string name="service_lobby_title">服务</string>
+    <string name="change_service_lobby">找服务</string>
+    <string name="change_demand_lobby">找需求</string>
+
+    <string name="recommend_service_introduction">服务介绍</string>
+    <string name="recommend_my_advantage">我的优势</string>
+
+    <string name="operation">运营</string>
+    <string name="generalize">推广</string>
+    <string name="business_and_ground_promotion">业务/地推</string>
+    <string name="official_documents_and_correspondence">文案</string>
+    <string name="design">设计</string>
+    <string name="photography">摄影</string>
+    <string name="consult_counselor">咨询顾问</string>
+    <string name="finance_and_taxation">财税</string>
+
+    <string name="specialist_recommend">专家推荐</string>
+
+    <string name="click_to_change_demand_or_service">点击这里可以\n切换需求或者服务</string>
+    <string name="change_to_find_service">切换找服务</string>
+    <string name="change_to_find_demand">切换找需求</string>
+
+    <!-- 推荐详情 -->
+    <string name="recommend_details_first_line">1、在领到预约后，雇主才付款。</string>
+    <string name="recommend_details_second_line">2、在领到预约后，雇主才付款，在领到预约后，雇主才付款，在领到预约后，雇主才付款。</string>
+    <string name="recommend_details_third_line">3、在领到预约后，雇主才付款，在领到预约后，雇主才付款。</string>
+
+    <!-- 服务 -->
+    <string name="publish_service">发布服务</string>
+    <string name="service_category">服务品类</string>
+    <string name="please_write">请填写</string>
+    <string name="voice_introduction">语音介绍</string>
+    <string name="voice_introduction_content">您可以录制一段60秒的语音介绍您的服务！</string>
+    <string name="voice_loading">语音加载中</string>
+    <string name="my_advantage">我的优势（20~100字）</string>
+    <string name="my_advantage_hint">请简单描述你熟练掌握的技能及经验</string>
+    <string name="service_introduction">服务介绍（30~500字）</string>
+    <string name="service_introduction_hint">请具体描述您的服务内容，将更快为您匹配需求，可点击右侧查看示例模板</string>
+    <string name="see_example">查看示例</string>
+    <string name="publish_immediately">立即发布</string>
+    <string name="publish_service_add_educational_experience_content">第二步：添加教育经历</string>
+    <string name="publish_service_add_work_experience_content">第三步：添加工作经历</string>
+    <string name="publish_service_add_honor_and_qualification_content">第四步：添加荣誉资质</string>
+    <string name="compile_service">编辑服务</string>
+    <string name="confirm_compile">确认编辑</string>
+    <string name="bid_to_make_money_at_once">立即投标赚钱</string>
+    <string name="my_offer">我的报价</string>
+    <string name="bid_to_make_money_at_once_hint">双方沟通后可以修改</string>
+    <string name="service_my_advantage">我的优势（20~100字）</string>
+    <string name="bid_at_once">立即投标</string>
+    <string name="modify_service_price">修改服务价格</string>
+    <string name="original_price">原价格：</string>
+    <string name="service_modify_price">修改价格：</string>
+    <string name="service_city">服务城市</string>
+    <string name="select_service_city">选择服务城市</string>
+    <string name="please_select_service_city">请选择服务城市</string>
+    <string name="select_location">点击左侧菜单栏，选择省份城市</string>
+    <string name="select_category">点击左侧菜单栏，选择服务品类</string>
+    <string name="preview">预览</string>
+    <string name="wechat_mini_apps_service_description">大神{name}在此,一大波优质的服务来袭,快来雇佣Ta吧!</string>
+
+    <!-- 需求 -->
+    <string name="publish_demand">发布需求</string>
+    <string name="employ_at_once">立即雇佣</string>
+    <string name="work_start_time">工作开始时间</string>
+    <string name="please_select">请选择</string>
+    <string name="payment_cycle">交付周期</string>
+    <string name="day">天</string>
+    <string name="aggregate_demand_budget">需求总预算</string>
+    <string name="please_fill_in">请填写</string>
+    <string name="yuan">元</string>
+    <string name="demand_introduction">需求介绍（30-500字）</string>
+    <string name="demand_introduction_hint_text">请具体描述您想要的需求内容，将更快为您找到适合的服务商，如：服务类型，服务内容，服务周期等</string>
+    <string name="trusteeship_amount_content">90%的雇主预付了托管金额找到满意的人才。若没有成交，订单过期后，托管金额退回您的账号中。</string>
+    <string name="payment_method">支付方式</string>
+    <string name="alipay">支付宝</string>
+    <string name="wechat">微信</string>
+    <string name="allintask_account">领到账号</string>
+    <string name="publish_demand_and_pay">发布需求并支付</string>
+    <string name="intelligent_match_inform_service_provider">智能匹配通知服务商</string>
+    <string name="go_to_choose">去选标</string>
+    <string name="service_offer">服务报价</string>
+    <string name="recommend_more_title">同时为我推荐更多服务商</string>
+    <string name="recommend_more_content">开启后将有更多服务商投标，95%雇主已开启</string>
+    <string name="demand_category">需求品类</string>
+    <string name="employer_demand_details_demand_introduction">需求介绍</string>
+    <string name="delay_completed">已延长</string>
+    <string name="manage_demand">管理需求</string>
+    <string name="completed_and_find_more_demand">已完成，去找更多需求</string>
+    <string name="expired_and_find_more_demand">已过期，去找更多需求</string>
+    <string name="has_bid_and_chat">已投标，立即沟通</string>
+    <string name="employment_price">雇用价格</string>
+    <string name="compile_demand">编辑需求</string>
+    <string name="recommend_details_apply_amount">申请：</string>
+    <string name="recommend_details_work_way">工作方式：</string>
+    <string name="recommend_details_site">地点：</string>
+    <string name="service_payment">服务薪资：</string>
+    <string name="confirm_employ">确认雇佣</string>
+    <string name="wechat_mini_apps_demand_description">大牛快到碗里来,{category}需求,预算￥{price},快来挣钱吧!</string>
+    <string name="audit_status">审核状态</string>
+
+    <!-- 语音 -->
+    <string name="hold_to_talk">按住说话</string>
+    <string name="voice_demo">语音示例</string>
+    <string name="record_cancel_tip">松开手指，取消发送</string>
+    <string name="record_cancel_pull_tip">手指上滑，取消发送</string>
+    <string name="record_cancel_little_time">剩余时间，即将结束</string>
+    <string name="record_waiting">&#12288;&#12288;&#12288;请稍候&#12288;&#12288;&#12288;</string>
+    <string name="chatting_record_audio_permission_ask_for">请提供录音播放权限！</string>
+    <string name="record_time_short_tip">&#12288;按住时间太短！&#12288;</string>
+    <string name="error_no_sdcard">没有SD卡，无法存储录音数据</string>
+    <string name="error_state_record">正在录音中，请先停止录音</string>
+    <string name="error_unknown">无法识别的错误</string>
+    <string name="error_voice_file_destroy">语音文件已损坏！</string>
+
+    <!-- 我的 -->
+    <string name="my_account">我的账户</string>
+    <string name="my_photo_album">我的相册</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="authentication_center">认证中心</string>
+    <string name="online_customer_service">在线客服</string>
+    <string name="about_us">关于我们</string>
+
+    <!-- 消息 -->
+    <string name="message_notification">消息通知</string>
+    <string name="system_notification">系统通知</string>
+    <string name="activity_message">活动消息</string>
+    <string name="read">已读</string>
+    <string name="unread">未读</string>
+    <string name="text_delivered_msg">送达</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="button_send">发送</string>
+    <string name="attach_smile">表情</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="attach_location">位置</string>
+    <string name="attach_video">视频</string>
+    <string name="attach_file">文件</string>
+    <string name="attach_voice_call">语音电话</string>
+    <string name="attach_video_call">视频通话</string>
+    <string name="user_card">名片</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="send_fail">发送消息失败,</string>
+    <string name="delete_message">删除消息</string>
+    <string name="delete_conversation_messages">删除会话和消息</string>
+    <string name="delete_conversation">删除会话</string>
+    <string name="copy_message">复制消息</string>
+    <string name="delete_voice">删除语音</string>
+    <string name="delete_video">删除视频</string>
+    <string name="delete">删除</string>
+    <string name="resend">重发</string>
+    <string name="confirm_resend">确认重发该信息？</string>
+    <string name="connect_failuer_toast">请检查网络或稍候重试</string>
+    <string name="network_unavailable">网络连接不可用，请检查网络</string>
+    <string name="copy">复制</string>
+    <string name="forward">转发</string>
+    <string name="button_logout">退出登录</string>
+    <string name="button_uploadlog">上传运行日志</string>
+    <string name="ok">确定</string>
+    <string name="prompt">提示</string>
+    <string name="clear_records">清空记录</string>
+    <string name="clear_all_records">是否清空所有聊天记录？</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_message">位置信息</string>
+    <string name="recording_video">录制视频</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_prefix">[语音]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="video_call">[视频通话]</string>
+    <string name="dynamic_expression">[动态表情]</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_save">保存</string>
+    <string name="button_search">查找</string>
+    <string name="button_add">添加</string>
+    <string name="search_header">搜</string>
+    <string name="network_isnot_available">网络不可用</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="select_contacts">选择联系人</string>
+    <string name="confirm_forward_to">确定转发到：%1$s ?</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_hint">退出后不会删除任何历史数据，下次登录依然可以使用本账号</string>
+    <string name="exit_group_hint">退出后，将不再接收此群聊信息</string>
+    <string name="dissolution_group_hint">退出后，此群将被解散</string>
+    <string name="exit_group">退出</string>
+    <string name="connect_conflict">同一帐号已在其他设备登录</string>
+    <string name="set">设置</string>
+    <string name="notify">新消息提醒</string>
+    <string name="newnotify">接收新消息通知</string>
+    <string name="voice">声音</string>
+    <string name="shake">震动</string>
+    <string name="chatset">聊天设置</string>
+    <string name="yangshengqi">使用扬声器播放语音</string>
+    <string name="book_black">通讯录黑名单</string>
+    <string name="session">会话</string>
+    <string name="address_book">通讯录</string>
+    <string name="now_refresh_list">正在刷新联系人</string>
+    <string name="Application_and_notify">申请与通知</string>
+    <string name="save_new_nickname">保存</string>
+    <string name="nickname_description">设置此昵称以后，在与iOS客户端demo聊天过程中，iOS一侧会显示此昵称而不是环信ID，如果对方使用安卓客户端则此设置不生效</string>
+    <string name="group_chat">群聊</string>
+    <string name="chat_room">聊天室</string>
+    <string name="voice_and_video_conference">音视频会议</string>
+    <string name="add_friend">添加好友</string>
+    <string name="search">搜索</string>
+    <string name="black_item">黑名单</string>
+    <string name="diagnose">诊断</string>
+    <string name="push_nick">iOS离线推送昵称</string>
+    <string name="Current_version">当前版本</string>
+    <string name="Not_Set">未设置</string>
+    <string name="Upload_the_log">上传日志中</string>
+    <string name="The_new_group_chat">新建群组</string>
+    <string name="add_public_group_chat">添加公开群</string>
+    <string name="add_public_chat_room">添加聊天室</string>
+    <string name="group_name">群聊名称</string>
+    <string name="Group_chat_profile">群聊简介</string>
+    <string name="Whether_the_public">是否公开</string>
+    <string name="Open_group_members_invited">开放群成员邀请</string>
+    <string name="Open_group_chat">公开的群聊</string>
+    <string name="blacklist">黑名单列表</string>
+    <string name="Empty_the_chat_record">清空聊天记录</string>
+    <string name="Shielding_of_the_message">屏蔽群消息</string>
+    <string name="dismiss_group">解散群聊</string>
+    <string name="Select_the_contact">选择联系人</string>
+    <string name="Group_chat_information">群聊资料</string>
+    <string name="Group_of_Lord">群主</string>
+    <string name="Introduction">简介</string>
+    <string name="To_join_the_chat">加入群聊</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="register">注册</string>
+    <string name="confirmpassword">确认密码</string>
+    <string name="downwaiting">正在下载文件请稍后</string>
+    <string name="mute">静音</string>
+    <string name="Hands_free">免提</string>
+    <string name="hang_up">挂断</string>
+    <string name="answer">接听</string>
+    <string name="unable_to_connect">不能连接到服务器</string>
+    <string name="newchat">新建聊天</string>
+    <string name="agree">同意</string>
+    <string name="Group_chat">群聊:</string>
+    <string name="not_download">未下载:</string>
+    <string name="Please_enter_a_username">请输入用户名</string>
+    <string name="is_down_please_wait">正在下载视频请稍候</string>
+    <string name="Exit_the_group_chat">退出群聊</string>
+    <string name="all_members">所有成员</string>
+
+    <string name="not_add_myself">不能添加自己</string>
+    <string name="This_user_is_already_your_friend">此用户已是你的好友</string>
+    <string name="Add_a_friend">加个好友呗</string>
+    <string name="send_successful">发送请求成功,等待对方验证</string>
+    <string name="Request_add_buddy_failure">请求添加好友失败:</string>
+    <string name="Network_error">网络出错</string>
+    <string name="Making_sure_your_location">正在确定你的位置……</string>
+    <string name="please_check">key 验证出错! 请在 AndroidManifest.xml 文件中检查 key 设置</string>
+    <string name="expression">[表情]</string>
+    <string name="Removed_from_the_failure">移出失败</string>
+    <string name="be_removing">正在移出……</string>
+    <string name="call_duration">通话时长</string>
+    <string name="Refused">已拒绝</string>
+    <string name="The_other_party_has_refused_to">对方已拒绝</string>
+    <string name="The_other_is_not_online">对方不在线</string>
+    <string name="The_other_is_on_the_phone">对方正在通话中</string>
+    <string name="The_other_party_did_not_answer">对方未接听</string>
+    <string name="did_not_answer">未接听</string>
+    <string name="Has_been_cancelled">已取消</string>
+    <string name="unable_to_get_loaction">无法获取到您的位置信息!</string>
+    <string name="not_connect_to_server">尚未连接至服务器，请稍后重试</string>
+    <string name="sd_card_does_not_exist">SD卡不存在，不能拍照</string>
+    <string name="cant_find_pictures">找不到图片</string>
+    <string name="File_does_not_exist">文件不存在</string>
+    <string name="The_file_is_not_greater_than_10_m">文件不能大于10M</string>
+    <string name="Whether_to_empty_all_chats">是否清空所有聊天记录</string>
+    <string name="Send_voice_need_sdcard_support">发送语音需要sdcard支持</string>
+    <string name="Recording_without_permission">无录音权限</string>
+    <string name="The_recording_time_is_too_short">录音时间太短</string>
+    <string name="send_failure_please">发送失败，请检测服务器是否连接</string>
+    <string name="Move_into_blacklist_success">移入黑名单成功</string>
+    <string name="Move_into_blacklist_failure">移入黑名单失败</string>
+    <string name="you_are_group">你被群创建者从此群中移除</string>
+    <string name="the_current_group_destroyed">当前群聊已被群创建者解散</string>
+    <string name="the_current_chat_room_destroyed">当前聊天室已被创建者解散</string>
+    <string name="Cant_chat_with_yourself">不能和自己聊天</string>
+    <string name="deleting">正在删除……</string>
+    <string name="Delete_failed">删除失败:</string>
+    <string name="Is_moved_into_blacklist">正在移入黑名单……</string>
+    <string name="Log_uploaded_successfully">日志上传成功</string>
+    <string name="Log_Upload_failed">log上传失败</string>
+    <string name="get_failed_please_check">获取失败,请检查网络或稍后再试</string>
+    <string name="people">人)</string>
+    <string name="being_added">正在添加……</string>
+    <string name="is_quit_the_group_chat">正在退出群聊……</string>
+    <string name="chatting_is_dissolution">正在解散群聊……</string>
+    <string name="are_empty_group_of_news">正在清空群消息……</string>
+    <string name="is_modify_the_group_name">正在修改群名称……</string>
+    <string name="Modify_the_group_name_successful">修改群名称成功</string>
+    <string name="change_the_group_name_failed_please">改变群名称失败，请检查网络或稍后重试</string>
+    <string name="Are_moving_to_blacklist">正在移入至黑名单</string>
+    <string name="failed_to_move_into">移入黑名单失败,请检查网络或稍后重试</string>
+    <string name="Exit_the_group_chat_failure">退出群聊失败:</string>
+    <string name="Dissolve_group_chat_tofail">解散群聊失败:</string>
+    <string name="Add_group_members_fail">添加群成员失败:</string>
+    <string name="Is_unblock">正在解除屏蔽……</string>
+    <string name="remove_group_of">解除群屏蔽失败，请检查网络或稍后重试</string>
+    <string name="group_is_blocked">正在屏蔽群组……</string>
+    <string name="group_of_shielding">群屏蔽失败，请检查网络或稍后重试</string>
+    <string name="sure_to_empty_this">确定清空此群的聊天记录吗？</string>
+    <string name="The_delete_button_is_clicked">删除按钮被点击</string>
+    <string name="Add_a_button_was_clicked">添加按钮被点击</string>
+    <string name="not_delete_myself">不能删除自己</string>
+    <string name="Are_removed">正在移除……</string>
+    <string name="confirm_the_members">确认将此成员加入至此群黑名单?</string>
+    <string name="Failed_to_get_group_chat_information">获取群聊信息失败:</string>
+    <string name="Is_sending_a_request">正在发送请求……</string>
+    <string name="Request_to_join">请求加入</string>
+    <string name="send_the_request_is">发送请求成功，等待群主同意</string>
+    <string name="Join_the_group_chat">加入群聊成功</string>
+    <string name="Failed_to_join_the_group_chat">加入群聊失败:</string>
+    <string name="temporary_does_not">暂不支持大于10M的视频！</string>
+    <string name="Video_footage">拍摄录像</string>
+    <string name="User_name_cannot_be_empty">用户名不能为空！</string>
+    <string name="Password_cannot_be_empty">密码不能为空！</string>
+    <string name="please_set_the_current">设置当前用户的昵称\n用于ios离线推送时显示用户昵称</string>
+    <string name="Is_landing">正在登录……</string>
+    <string name="list_is_for">将在后台获取好友和群聊列表……</string>
+    <string name="login_failure_failed">登录失败: 获取好友或群聊失败</string>
+    <string name="Login_failed">登录失败:</string>
+    <string name="receive_the_passthrough">收到透传：action：</string>
+    <string name="have_you_removed">已把你从他好友列表里移除</string>
+    <string name="can_not_connect_chat_server_connection">连接不到聊天服务器</string>
+    <string name="the_current_network">当前网络不可用，请检查网络设置</string>
+    <string name="Invite_you_to_join_a_group_chat">邀请你加入了群聊</string>
+    <string name="Agreed_to_your_group_chat_application">同意了你的群聊申请</string>
+    <string name="Logoff_notification">下线通知</string>
+    <string name="Remove_the_notification">移除通知</string>
+    <string name="Group_name_cannot_be_empty">群组名称不能为空</string>
+    <string name="Is_to_create_a_group_chat">正在创建群聊……</string>
+    <string name="Failed_to_create_groups">创建群组失败:</string>
+    <string name="The_video_to_start">录像开始</string>
+    <string name="Whether_to_send">是否发送？</string>
+    <string name="Open_the_equipment_failure">打开设备失败!</string>
+    <string name="Confirm_password_cannot_be_empty">确认密码不能为空!</string>
+    <string name="Two_input_password">两次输入的密码不一致，请重新输入!</string>
+    <string name="Is_the_registered">正在注册……</string>
+    <string name="Registered_successfully">注册成功</string>
+    <string name="network_anomalies">网络异常，请检查网络！</string>
+    <string name="User_already_exists">用户已存在！</string>
+    <string name="Are_logged_out">正在退出登录..</string>
+    <string name="Download_the_pictures">下载图片: 0%</string>
+    <string name="Download_the_pictures_new">下载图片:</string>
+    <string name="Failed_to_download_file">下载文件失败:</string>
+    <string name="Version_number_is_wrong">版本号错误</string>
+    <string name="Are_connected_to_each_other">正在连接对方……</string>
+    <string name="Is_not_yet_connected_to_the_server">尚未连接至服务器</string>
+    <string name="In_the_call">通话中……</string>
+    <string name="The_other_party_refused_to_accept">对方拒绝接受！……</string>
+    <string name="Connection_failure">连接建立失败！……</string>
+    <string name="The_other_party_is_not_online">对方不在线，请稍后再拨……</string>
+    <string name="The_other_is_on_the_phone_please">对方正在通话中，请稍后再拨</string>
+    <string name="The_other_is_hang_up">对方已经挂断</string>
+    <string name="The_other_party_did_not_answer_new">对方未接听</string>
+    <string name="Into_the_blacklist">移入到黑名单？</string>
+    <string name="Have_downloaded">已下载</string>
+    <string name="Did_not_download">未下载</string>
+    <string name="Has_agreed_to_your_friend_request">已同意你的好友请求</string>
+    <string name="Request_to_add_you_as_a_friend">请求加你为好友</string>
+    <string name="Apply_to_the_group_of">申请加入群：</string>
+    <string name="Has_agreed_to">已同意</string>
+    <string name="Has_refused_to">已拒绝</string>
+    <string name="Are_agree_with">正在同意……</string>
+    <string name="direct_call">Direct</string>
+    <string name="relay_call">Relay</string>
+    <string name="Agree_with_failure">同意失败:</string>
+    <string name="Is_download_voice_click_later">正在下载语音，稍后点击</string>
+    <string name="Send_the_following_pictures">发送以下图片？</string>
+    <string name="search_new">搜</string>
+    <string name="were_mentioned">[有人@我]</string>
+
+    <string name="Delete_the_contact">删除联系人</string>
+    <string name="Move_into_the_blacklist_new">移入到黑名单</string>
+    <string name="Change_the_group_name">改变群名称</string>
+    <string name="Sync_Groups_From_Server">从服务器下载群聊信息</string>
+
+    <string name="update_contact_list">更新联系人列表</string>
+    <string name="update_black_list">更新黑名单</string>
+    <string name="update_groups">更新群聊</string>
+
+    <string name="update_contact_list_failed">更新联系人列表失败</string>
+    <string name="update_black_list_failed">更新黑名单失败</string>
+    <string name="update_groups_failed">更新群聊失败</string>
+
+    <string name="no_more_messages">没有更多的消息了</string>
+    <string name="gorup_not_found">找不到这个群组</string>
+    <string name="chatroom_allow_owner_leave"> 允许聊天室群主离开</string>
+    <string name="group_id">群ID</string>
+    <string name="move_out_backlist">移出黑名单</string>
+    <string name="input_new_nick_hint">输入新昵称</string>
+    <string name="search_pubic_group">搜索公开群</string>
+    <string name="group_not_existed">群组不存在</string>
+    <string name="group_search_failed">搜索失败</string>
+    <string name="error_send_invalid_content">你发送了不合法的消息内容</string>
+    <string name="error_send_not_in_the_group">你已经不在此群了</string>
+    <string name="refreshing_group_list">正在刷新群列表</string>
+    <string name="failed_to_load_data">加载数据失败，请检查网络或稍后重试</string>
+    <string name="searching">正在搜索..</string>
+    <string name="hanging_up">正在挂断..</string>
+    <string name="illegal_user_name">用户名不合法</string>
+    <string name="robot_chat">环信小助手</string>
+    <string name="title_user_profile">个人资料</string>
+    <string name="nickname">昵称</string>
+    <string name="dl_title_upload_photo">上传头像</string>
+    <string name="dl_msg_local_upload">本地上传</string>
+    <string name="dl_msg_take_photo">拍照上传</string>
+    <string name="toast_no_support">暂不支持！</string>
+    <string name="setting_nickname">设置昵称</string>
+    <string name="dl_ok">确定</string>
+    <string name="dl_cancel">取消</string>
+    <string name="toast_nick_not_isnull">昵称不能为空！</string>
+    <string name="dl_update_nick">更新昵称</string>
+    <string name="dl_update_photo">更新头像</string>
+    <string name="dl_waiting">请等待……</string>
+    <string name="toast_updatenick_success">更新昵称成功!</string>
+    <string name="toast_updatenick_fail">更新昵称失败!</string>
+    <string name="toast_updatephoto_success">更新头像成功!</string>
+    <string name="toast_updatephoto_fail">更新头像失败!</string>
+    <string name="quiting_the_chat_room">正在退出聊天室……</string>
+
+    <string name="app_slogon">即时通讯云领导者</string>
+    <string name="recall">撤回</string>
+    <string name="msg_recall_by_self">您撤回了一条消息</string>
+    <string name="msg_recall_by_user">%1$s 撤回了一条消息</string>
+    <string name="search_contanier">搜索："%s"</string>
+    <string name="stop_record">停止录制</string>
+    <string name="switch_camera">切换摄像头</string>
+    <string name="capture_image">抓取图片</string>
+    <string name="record_finish_toast">录制完毕，文件存储在%s</string>
+    <string name="em_user_remove">此用户已被移除</string>
+    <string name="user_forbidden">用户被服务器限制连接</string>
+    <string name="push_settings">消息推送设置</string>
+    <string name="set_custom_appkey">自定义App key</string>
+    <string name="set_custom_server">自定义server</string>
+    <string name="call_option">通话设置</string>
+    <string name="multi_device_management">多设备管理</string>
+    <string name="group_not_found">找不到这个群组</string>
+    <string name="join_need_owner_approval">加入公开群需要群主同意</string>
+    <string name="serach_group_message">消息搜索</string>
+    <string name="block_offline_group_push">屏蔽离线消息推送</string>
+    <string name="refuse">拒绝</string>
+    <string name="accept_join_group">%s同意加入群</string>
+    <string name="refuse_join_group">%s拒绝加入群</string>
+    <string name="at_your_in_group">%s在群聊中@了你</string>
+    <string name="emojicon_test_name">示例</string>
+
+    <string name="call_version_inconsistent">通话协议版本不一致</string>
+    <string name="the_current_group">当前群聊已被群创建者解散</string>
+    <string name="messages_are_empty">聊天记录已被清空</string>
+    <string name="is_modify_the_group_description">正在修改群详情..</string>
+    <string name="Modify_the_group_description_successful">修改群详情成功</string>
+    <string name="Modify_the_group_extension_successful">修改群扩展成功</string>
+    <string name="change_the_group_description_failed_please">修改群详情失败，请检查网络或稍后重试</string>
+    <string name="change_the_group_extension_failed_please">修改群扩展失败，请检查网络或稍后重试</string>
+    <string name="registration_failed_without_permission">注册失败，无权限！</string>
+    <string name="Registration_failed">注册失败</string>
+    <string name="have_connected_with">已经和对方建立连接</string>
+    <string name="invite_join_group">邀请加入群：</string>
+    <string name="Are_refuse_with">正在拒绝……</string>
+    <string name="Refuse_with_failure">拒绝失败:</string>
+
+    <string name="change_the_group_description">改变群描述</string>
+    <string name="change_the_group_extension">改变群扩展</string>
+
+    <string name="join_public_group">加入公开群</string>
+    <string name="delete_msg_when_exit_group">退出群组时删除聊天数据</string>
+    <string name="auto_accept_group_invitation">自动同意群组加群邀请</string>
+    <string name="adaptive_video_encode">视频自适应码率编码</string>
+    <string name="msg_roaming">消息漫游</string>
+    <string name="offline_call_push">通话离线推送</string>
+    <string name="group_announcement">公告</string>
+    <string name="share_files">共享文件</string>
+    <string name="upload_files">上传</string>
+    <string name="user_already_in_contactlist">此用户已是你好友(被拉黑状态)，从黑名单列表中移出即可</string>
+    <string name="group_nick">聊天室名称:</string>
+    <string name="group_owner">群主：</string>
+    <string name="user_removed_from_group">你已经被移除群</string>
+
+    <string name="network_unstable">网络不稳定</string>
+    <string name="no_call_data">没有通话数据</string>
+
+    <string name="message_bid_to_make_money">投标赚钱</string>
+    <string name="message_bid_management">投标处理</string>
+
+    <string name="message_bid_success_title">投标成功</string>
+    <string name="message_sender_bid_success_content">你已投标，请与雇主沟通！</string>
+    <string name="message_receiver_bid_success_content">服务商已投标，请沟通后支付！</string>
+    <string name="message_modify_price_title">修改价格</string>
+    <string name="message_sender_modify_price_content">你修改了价格，请与雇主沟通！</string>
+    <string name="message_receiver_modify_price_content">服务商修改了价格，请确认后支付！</string>
+    <string name="message_pay_success_title">支付成功</string>
+    <string name="message_sender_pay_success_content">你已支付成功，请安排工作！</string>
+    <string name="message_receiver_pay_success_content">雇主支付成功，服务开始！</string>
+    <string name="message_refunded_title">已退款</string>
+    <string name="message_sender_refunded_content">你已退款，服务结束！</string>
+    <string name="message_receiver_refunded_content">雇主已退款，服务结束！</string>
+    <string name="message_start_work_title">服务开始啦！</string>
+    <string name="message_sender_start_work_content">服务正式开始，赶紧安排工作吧！</string>
+    <string name="message_receiver_start_work_content">服务正式开始，进入工作状态！</string>
+    <string name="message_apply_for_refund_title">雇主申请退款</string>
+    <string name="message_sender_apply_for_refund_content">你申请退款，请联系服务商处理！</string>
+    <string name="message_receiver_apply_for_refund_content">雇主申请退款，请24小时内处理！</string>
+    <string name="message_agree_refund_title">同意退款</string>
+    <string name="message_sender_agree_refund_content">你同意了退款，服务结束！</string>
+    <string name="message_receiver_agree_refund_content">服务商同意了退款，服务结束！</string>
+    <string name="message_reject_refund_title">驳回退款</string>
+    <string name="message_sender_reject_refund_content">你驳回了退款，请沟通处理！</string>
+    <string name="message_receiver_reject_refund_content">服务商驳回了退款，请沟通处理！</string>
+    <string name="message_apply_for_arbitrament_title">仲裁申请</string>
+    <string name="message_sender_apply_for_arbitrament_content">你申请了仲裁，服务中止！</string>
+    <string name="message_receiver_apply_for_arbitrament_content">雇主申请了仲裁，服务中止！</string>
+    <string name="message_delay_title">延长7天</string>
+    <string name="message_sender_delay_content">你延长了7天服务时间！</string>
+    <string name="message_receiver_delay_content">雇主延长了7天服务时间！</string>
+    <string name="message_order_finished_title">订单完成</string>
+    <string name="message_sender_order_finished_content">你确认完成了订单，服务完成！</string>
+    <string name="message_receiver_order_finished_content">雇主确认完成了订单，服务完成</string>
+    <string name="message_evaluated_title">已评价！</string>
+    <string name="message_sender_employer_evaluated_content">你已对雇主评价！</string>
+    <string name="message_receiver_employer_evaluated_content">服务商已对你评价！</string>
+    <string name="message_sender_service_evaluated_content">你已对服务商评价！</string>
+    <string name="message_receiver_service_evaluated_content">雇主已对你评价！</string>
+    <string name="message_recommend_title">平台智能匹配</string>
+    <string name="message_sender_recommend_content">你的需求与服务匹配，平台你为推荐</string>
+    <string name="message_receiver_recommend_content">你的服务与需求匹配，平台你为推荐</string>
+    <string name="message_employ_success">雇佣成功</string>
+    <string name="message_sender_employ_success_content">你已支付成功，请确认开始工作！</string>
+    <string name="message_receiver_employ_success_content">薪资已托管，请联系开始工作！</string>
+    <string name="message_select_bidder">选标</string>
+    <string name="message_details">详情</string>
+    <string name="message_dispose">处理</string>
+    <string name="message_evaluate">评价</string>
+    <string name="message_see">查看</string>
+
+    <string name="chat_picture">照片</string>
+    <string name="chat_take_a_picture">拍照</string>
+
+    <!-- lint -->
+    <string name="delete_contact">删除联系人</string>
+    <string name="push_no_disturb">推送消息免打扰(针对GCM、小米、华为等推送)</string>
+    <string name="push_no_disturb_on">开启</string>
+    <string name="push_only_on">只在夜间开启(22:00 - 7:00)</string>
+    <string name="push_no_disturb_off">关闭</string>
+    <string name="push_saving_settings">正在保存...</string>
+    <string name="push_save_failed">保存失败</string>
+    <string name="loading_more">正在加载更多……</string>
+
+    <string name="destroy_chatroom">销毁聊天室</string>
+    <string name="chatroom_subject">Chat room subject</string>
+    <string name="change_chatroom_subject">修改聊天室标题</string>
+    <string name="change_chatroom_description">修改聊天室描述</string>
+    <string name="chat_room_nick">名称：</string>
+    <string name="is_quit_the_chat_room">是否退出聊天室</string>
+    <string name="chat_room_id">聊天室ID</string>
+    <string name="The_new_chat_room">创建聊天室</string>
+    <string name="chat_room_name">聊天室名称</string>
+    <string name="chat_room_description">聊天室描述</string>
+    <string name="Failed_to_create_chat_room">创建聊天室失败</string>
+
+    <string name="mail_log_title">发送邮件附件中包含log</string>
+
+    <string name="multi_device_contact_accept">接受%s的好友邀请[remote]</string>
+    <string name="multi_device_contact_decline">拒绝%s的好友邀请[remote]</string>
+    <string name="multi_device_contact_add">发送好友邀请给%s[remote]</string>
+    <string name="multi_device_contact_ban">加%s到黑名单[remote]</string>
+    <string name="multi_device_contact_allow">移除%s从黑名单[remote]</string>
+
+    <string name="multi_device_group_create">创建群组[remote]</string>
+    <string name="multi_device_group_destroy">销毁群组[remote]</string>
+    <string name="multi_device_group_join">加入群组[remote]</string>
+    <string name="multi_device_group_leave">离开群组[remote]</string>
+    <string name="multi_device_group_apply">申请加入群组[remote]</string>
+    <string name="multi_device_group_apply_accept">接受%s入群申请[remote]</string>
+    <string name="multi_device_group_apply_decline">拒绝%s入群申请[remote]</string>
+    <string name="multi_device_group_invite">邀请%s加入群组[remote]</string>
+    <string name="multi_device_group_invite_accept">接受%s入群邀请[remote]</string>
+    <string name="multi_device_group_invite_decline">拒绝%s入群邀请[remote]</string>
+    <string name="multi_device_group_kick">将%s从群组移除[remote]</string>
+    <string name="multi_device_group_ban">将%s加入群组的黑名单[remote]</string>
+    <string name="multi_device_group_allow">将%s从群组的黑名单移除[remote]</string>
+    <string name="multi_device_group_block">停止接受群组消息[remote]</string>
+    <string name="multi_device_group_unblock">可以接受群组的消息[remote]</string>
+    <string name="multi_device_group_assign_owner">将群组所有者权限转移给%1$s[remote]</string>
+    <string name="multi_device_group_add_admin">添加%s作为群组的管理员[remote]</string>
+    <string name="multi_device_group_remove_admin">移除%s在群组的管理员身份[remote]</string>
+    <string name="multi_device_group_add_mute">将%s在群组中禁言[remote]</string>
+    <string name="multi_device_group_remove_mute">将%s在群组中解除禁言[remote]</string>
+
+    <string name="multi_device_logged_in_device_kick_item">将设备移除</string>
+
+    <!-- 需求管理 -->
+    <string name="demand_manage_first_enter_title">什么是需求管理</string>
+    <string name="demand_manage_first_enter_content">当您的需求发出后，如果有服务者愿意提供服务，Ta就会前来投标，在这里您可以找到并联系Ta们。</string>
+    <string name="go_to_publish_demand">去发布需求</string>
+    <string name="demand_status_in_the_bidding">竞标中</string>
+    <string name="demand_status_underway">进行中</string>
+    <string name="demand_status_completed">已完成</string>
+    <string name="demand_status_expired">已过期</string>
+    <string name="win_the_bidding">中标</string>
+    <string name="no_bidder">暂无人投标</string>
+
+    <!-- 服务管理 -->
+    <string name="service_manage_first_enter_title">什么是服务管理</string>
+    <string name="service_manage_first_enter_first_content">这里是领到的赚钱宝地，当你发布你的服务后，你将看到系统推荐给你的需求订单。</string>
+    <string name="service_manage_first_enter_second_content">投标赚钱！你可以通过在线沟通与需求雇主进行及时的沟通。</string>
+    <string name="service_manage_first_enter_third_content">平台提供在线托管薪资，完成后即可收到工资。</string>
+    <string name="know">知道了</string>
+    <string name="complete_resume">完善简历</string>
+    <string name="identity_verification">实名认证</string>
+    <string name="my_service">我的服务</string>
+    <string name="wait_bid">待投标</string>
+    <string name="has_bid">已投标</string>
+    <string name="underway">进行中</string>
+    <string name="completed">已完成</string>
+    <string name="expired">已过期</string>
+    <string name="he_or_she_select_you">Ta选中了你</string>
+    <string name="chat">咨询</string>
+    <string name="employ_me">雇佣我</string>
+    <string name="bid_to_make_money">投标赚钱</string>
+    <string name="service_status_wait_bid_content">为您推荐优质需求，请放心投标赚钱</string>
+    <string name="bid_price">投标价格</string>
+    <string name="he_or_she_advantage">Ta的优势</string>
+    <string name="bid_time">投标时间</string>
+    <string name="service_status_has_bid_content">您已投标，请联系雇佣确认服务付款！</string>
+    <string name="modify_price">修改价格</string>
+    <string name="order_number">订单编号</string>
+    <string name="payment_price">支付价格</string>
+    <string name="service_time">服务时间</string>
+    <string name="evaluate_employer">评价雇主</string>
+    <string name="evaluate">评价</string>
+    <string name="see_evaluate">查看评价</string>
+    <string name="service_status_expired_content">需求已过期，请查看更多推荐的需求投标！</string>
+    <string name="service_details">服务详情</string>
+    <string name="has_extended">已延长</string>
+    <string name="compile_service_content">编辑服务，请点击右上角"我的服务"</string>
+
+    <!-- 需求详情 -->
+    <string name="demand_details">需求详情</string>
+    <string name="service_start_time">服务开始时间</string>
+    <string name="service_end_time">服务结束时间</string>
+    <string name="need_language">需要语言</string>
+    <string name="service_content">服务内容</string>
+    <string name="publish_time">发布时间</string>
+    <string name="demand_valid_time">需求有效时间</string>
+    <string name="work_way">工作方式</string>
+    <string name="work_site">工作地点</string>
+    <string name="project_finish_time">项目完成时间</string>
+    <string name="demand_budget">需求预算</string>
+    <string name="current_status">当前状态</string>
+    <string name="pay">支付</string>
+    <string name="see_bidder">查看投标者</string>
+    <string name="evaluate_service">评价服务</string>
+    <string name="look_over_win_the_bidding">查看中标的</string>
+    <string name="select_more_bid">选更多标</string>
+    <string name="look_over_bidder">查看投标者</string>
+    <string name="look_over_complete">查看完成的</string>
+    <string name="wait_start">待开始</string>
+    <string name="wait_finish">待完成</string>
+    <string name="work_time">工作时间</string>
+    <string name="confirm_delay">确认延长</string>
+    <string name="apply_for_refund">申请退款</string>
+    <string name="confirm_start">确认开始</string>
+    <string name="apply_for_arbitrament">申请仲裁</string>
+    <string name="confirm_complete">确认完成</string>
+    <string name="demand_details_content">Ta选中了你，投标Ta成单概率很大</string>
+    <string name="underway_trusteeship">托管中</string>
+    <string name="start_work_time">开始工作时间</string>
+    <string name="reject_refund">驳回退款</string>
+    <string name="agree_refund">同意退款</string>
+    <string name="rebates">部分退款</string>
+    <string name="subscribe_time">预约时间</string>
+    <string name="delivery_cycle">交付周期</string>
+    <string name="project_finished_time">项目完成时间</string>
+    <string name="facilitator_demand_introduction">需求介绍</string>
+    <string name="no_service_provider">暂无服务商处理</string>
+    <string name="demand_details_has_bid">已投标：</string>
+    <string name="demand_details_has_pay">已支付：</string>
+    <string name="demand_details_has_browse">已浏览：</string>
+    <string name="demand_publisher">需求发布者</string>
+    <string name="demand_description">需求描述</string>
+    <string name="service_site">服务地点</string>
+    <string name="subscribe_start_time">预约开始时间</string>
+    <string name="employment_way">雇佣方式</string>
+    <string name="employment_city">雇佣城市</string>
+    <string name="employment_site">雇佣地点</string>
+    <string name="employment_time">雇佣次数</string>
+    <string name="employment_period">雇佣周期</string>
+    <string name="go_to_publish">去发布</string>
+
+    <!-- 个人信息 -->
+    <string name="personal_information">个人信息</string>
+    <string name="modify">修改</string>
+    <string name="name">姓名</string>
+    <string name="age">年龄</string>
+    <string name="gender">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="please_select_birthday">请选择生日日期</string>
+    <string name="add_education_experience">添加教育经历</string>
+    <string name="add_work_experience">添加工作经历</string>
+    <string name="add_honor_and_qualification">添加荣誉资质</string>
+    <string name="education_experience">教育经历</string>
+    <string name="work_experience">工作经历</string>
+    <string name="honor_and_qualification">荣誉资质</string>
+    <string name="educational_institution">教育机构</string>
+    <string name="please_select_your_school">请选择您的学校</string>
+    <string name="major">专业</string>
+    <string name="please_select_major">请选择专业</string>
+    <string name="education_background">学历</string>
+    <string name="please_input_select_education_background">请选择学历</string>
+    <string name="start_time">开始时间</string>
+    <string name="please_select_start_time">请选择开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="please_select_end_time">请选择结束时间</string>
+    <string name="remove">移除</string>
+    <string name="add_personal_information">添加+</string>
+    <string name="work_unit">工作单位</string>
+    <string name="please_input_work_unit">请填写工作单位</string>
+    <string name="position">职位</string>
+    <string name="please_input_position">请填写职位</string>
+    <string name="awards_or_certificate">奖项/证书</string>
+    <string name="please_input_awards_name_or_certificate_name">请输入奖项名称或者证书名称</string>
+    <string name="issuing_authority">颁发机构</string>
+    <string name="please_input_issuing_authority">请输入颁发的机构</string>
+    <string name="acquisition_time">获取时间</string>
+    <string name="please_select_acquisition_time">请选择获取时间</string>
+    <string name="compile_name">修改姓名</string>
+    <string name="please_input_name">请输入姓名</string>
+    <string name="please_select_gender">请选择性别</string>
+
+    <!-- 设置 -->
+    <string name="account_management">账户管理</string>
+    <string name="security_management">安全管理</string>
+    <string name="unsafe">不安全</string>
+    <string name="safe">安全</string>
+    <string name="modify_mobile">修改手机</string>
+    <string name="bind_mailbox">绑定邮箱</string>
+    <string name="unbind">未绑定</string>
+    <string name="is_binding">已绑定</string>
+    <string name="login_password">登录密码</string>
+    <string name="go_to_set">去设置</string>
+    <string name="payment_password">支付密码</string>
+    <string name="gathering_bank_card">收款银行卡</string>
+    <string name="go_to_fill_in">去填写</string>
+    <string name="bind_wechat">绑定微信</string>
+    <string name="bind_qq">绑定QQ</string>
+    <string name="new_message_notification">新消息通知</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="version_name">版本号</string>
+    <string name="confirm_modify_phone_number">确认修改手机号码</string>
+    <string name="please_input_mailbox">请输入邮箱</string>
+    <string name="identify_code">验证码</string>
+    <string name="confirm_bind">确认绑定</string>
+    <string name="modify_mailbox">修改邮箱</string>
+    <string name="confirm_modify">确认修改</string>
+    <string name="set_login_password">设置登录密码</string>
+    <string name="please_input_login_password">请输入登录密码</string>
+    <string name="confirm_login_password">确认登录密码</string>
+    <string name="modify_login_password">修改登录密码</string>
+    <string name="please_input_new_password">请输入新密码</string>
+    <string name="set_new_payment_password">设置新的支付密码</string>
+    <string name="please_fill_in_old_payment_password">请填写原来的支付密码</string>
+    <string name="next_step">下一步</string>
+    <string name="confirm">确认</string>
+    <string name="modify_payment_password">修改支付密码</string>
+    <string name="sms_message_notification">短信消息通知</string>
+    <string name="wechat_message_notification">微信消息通知</string>
+    <string name="go_to_verify">去认证</string>
+
+    <!-- 我的服务 -->
+    <string name="add_photos_content">增加服务图片，提高服务的专业性</string>
+    <string name="resume_complete_rate">简历完善度：</string>
+    <string name="complete">完善</string>
+    <string name="have_been_online">已上线</string>
+    <string name="have_been_offline">已下线</string>
+    <string name="audit_failure">审核不通过</string>
+    <string name="remain_to_be_improved">待完善</string>
+    <string name="service_pictures">服务图片</string>
+    <string name="online">上线</string>
+    <string name="offline">下线</string>
+    <string name="compile">编辑</string>
+    <string name="add_photos">增加照片</string>
+
+    <!-- 我的相册 -->
+    <string name="photo_album_a_photo">总共（1）张</string>
+    <string name="photo_album_two_photos">总共（2）张</string>
+    <string name="photo_album_three_photos">总共（3）张</string>
+    <string name="add">添加</string>
+
+    <!-- 相册 -->
+    <string name="save_image">保存图片</string>
+    <string name="delete_image">删除图片</string>
+
+    <!-- 我的账户-->
+    <string name="account_balance">账户余额（元）</string>
+    <string name="my_income">可提现：</string>
+    <string name="my_recharge">预充值：</string>
+    <string name="withdraw_deposit">提现</string>
+    <string name="recharge">充值</string>
+    <string name="transaction_details">交易明细</string>
+    <string name="income">收入</string>
+    <string name="bank_card">银行卡</string>
+
+    <!-- 银行卡 -->
+    <string name="bank_card_setting">银行卡设置</string>
+    <string name="payee_name">收款人姓名</string>
+    <string name="reserved_phone">预留手机</string>
+    <string name="deposit_bank">开户银行</string>
+    <string name="bank_card_number">银行卡号</string>
+    <string name="open_an_account_province_and_city">开户省市</string>
+    <string name="subbranch_name">支行名称</string>
+    <string name="modify_bank_card">修改银行卡</string>
+    <string name="fill_in_bank_card">填写银行卡</string>
+    <string name="dialog_fill_in_bank_card_content">你还没有填写银行卡，不能提现哦！</string>
+    <string name="select_deposit_bank">选择开户银行</string>
+    <string name="upload_bank_card_photo">上传银行卡照片</string>
+    <string name="add_bank_card">添加银行卡</string>
+    <string name="click_to_upload_bank_card_again">点击重新上传</string>
+    <string name="confirm_modify_bank_card">确认修改银行卡</string>
+
+    <!-- 我的收藏 -->
+    <string name="collected_service">收藏的服务</string>
+    <string name="upload">上传</string>
+
+    <!-- 搜索列表 -->
+    <string name="service">服务</string>
+    <string name="demand">需求</string>
+    <string name="city">城市</string>
+    <string name="mode">方式</string>
+    <string name="more">更多</string>
+
+    <!-- 评价 -->
+    <string name="comprehensive_assessment">综合评价</string>
+    <string name="service_evaluate">服务评价</string>
+    <string name="complete_on_time">按时完成</string>
+    <string name="work_quality">工作质量</string>
+    <string name="service_integrity">服务诚信</string>
+    <string name="evaluation_content">评价内容</string>
+    <string name="submit_evaluation">提交评价</string>
+    <string name="evaluation_details">评价详情</string>
+    <string name="my_assessment_of_the_employer">我对雇主的评价</string>
+    <string name="my_employer_assessment_of_me">雇主对我的评价</string>
+    <string name="my_evaluation_of_service_providers">我对服务商的评价</string>
+    <string name="service_providers_evaluate_me">服务商对我的评价</string>
+    <string name="all_evaluate">全部评价</string>
+
+    <!-- 支付 -->
+    <string name="payment_details">支付详情</string>
+    <string name="payment_money">支付金额</string>
+    <string name="actual_payment_money">实际支付金额</string>
+    <string name="payment_content">支付表示同意《Allintask预约服务条款》</string>
+    <string name="pay_at_once">立即支付</string>
+    <string name="wallet_pay">钱包支付</string>
+
+    <!-- 申请退款 -->
+    <string name="work_status">工作状态</string>
+    <string name="unfinished">未完成</string>
+    <string name="refund_reason">退款原因</string>
+    <string name="please_fill_in_your_refund_reason">请填写您的退款原因</string>
+    <string name="refund_money">退款金额</string>
+    <string name="refund_money_content">最多为订单金额1000元</string>
+    <string name="apply_for_refund_content">您所退款的剩余款项将划给服务商，不可退回！请联系服务商再处理！</string>
+    <string name="confirm_submit">确认提交</string>
+    <string name="please_select_cancel_reason">请选择取消的理由</string>
+
+    <!-- 申请仲裁 -->
+    <string name="arbitrament_reason">仲裁原因</string>
+    <string name="arbitrament_rule">仲裁规则</string>
+    <string name="details">详细描述</string>
+    <string name="upload_evidence">上传凭证（最多9张）</string>
+
+    <!-- 裁剪图片 -->
+    <string name="crop__saving">正在保存图片</string>
+    <string name="crop__wait">请等待</string>
+    <string name="crop__pick_error">没有可用的图片来源</string>
+
+    <string name="crop__done">完成</string>
+    <string name="crop__cancel" tools:ignore="ButtonCase">取消</string>
+
+    <!-- 上传相册 -->
+    <string name="upload_album_publish_service_content">选择您上传照片的服务品类（个人照片不用选择）</string>
+    <string name="upload_album_hint_text">请输入照片的描述</string>
+    <string name="upload_album_content">请上传于服务相关的照片，或个人形象生活照，否则审核可能不通过哦</string>
+    <string name="submit">提交</string>
+    <string name="take_photo">拍照</string>
+    <string name="select_photo_album">选择相册</string>
+    <string name="error_file_format_pause">暂时不支持动态图片</string>
+    <string name="image_type_support">目前支持的图片类型：jpg,jpeg,png</string>
+    <string name="error_file_format">请选择静态图片</string>
+    <string name="get_image_error">获取图片出错</string>
+
+    <!-- 下载 -->
+    <string name="isMobileNetworkTips">您现在连接的是移动网络，继续观看会产生流量费用，是否继续？</string>
+    <string name="download_progress">正在下载:%1$d%%</string>
+    <string name="app_download_success">下载完成，点击安装</string>
+    <string name="voice_download_success">语音下载完成</string>
+    <string name="is_newest">当前已是最新版本</string>
+    <string name="downloading">正在下载</string>
+
+    <!-- 闪屏页 -->
+    <string name="splash_text">领到雇佣，随时开工</string>
+
+    <!-- 引导页 -->
+    <string name="experience_at_once">立即体验</string>
+
+    <!-- 无数据页 -->
+    <string name="demand_status_no_data">此状态下没有需求数据！\n请点击刷新！</string>
+    <string name="publish_at_once">立即发布</string>
+    <string name="message_no_data">暂无消息\n请点击刷新！</string>
+    <string name="service_status_no_data">此状态下没有服务数据！\n请点击刷新！</string>
+    <string name="search_no_data">很抱歉，未能找到相关的搜索结果！\n请点击刷新！</string>
+    <string name="my_service_no_data">你没有发布过服务，请去发布吧！\n请点击刷新！</string>
+    <string name="my_photo_album_no_data">你没有上传过图片，请去上传！\n请点击刷新！</string>
+    <string name="my_collection_no_data">你还没有收藏过服务！\n请点击刷新！</string>
+    <string name="all_evaluate_no_data">你还没有全部评价！\n请点击刷新！</string>
+    <string name="demand_details_no_data">当前需求已下线或者删除</string>
+
+    <!-- 无网络页 -->
+    <string name="no_network">无法连接网络，请检查网络并点击重试</string>
+    <string name="check_network">检查网络</string>
+
+    <!-- APP更新 -->
+    <string name="found_new_version">发现新版本</string>
+    <string name="update_at_once">立即更新</string>
+    <string name="install_now">现在安装</string>
+
+    <!-- 高级筛选 -->
+    <string name="unlimited">不限</string>
+    <string name="service_way">服务方式</string>
+    <string name="price_unit">价格单位</string>
+    <string name="service_price">服务价格</string>
+    <string name="sort">排序</string>
+    <string name="pay_escrow">薪资托管</string>
+    <string name="range_of_budget">预算范围</string>
+
+    <!-- 举报 -->
+    <string name="report">举报</string>
+    <string name="report_reason">举报原因</string>
+    <string name="supplementary_instruction">补充说明</string>
+    <string name="confirm_report">确认举报</string>
+
+    <!-- 提现申请 -->
+    <string name="apply_for_withdraw_deposit">提现申请</string>
+    <string name="debit_card">到账银行卡</string>
+    <string name="withdraw_deposit_amount">提现金额</string>
+    <string name="withdraw_deposit_service_charge">提现手续费：</string>
+    <string name="withdraw_deposit_content">3-5个工作日内到账</string>
+
+    <!-- 支付密码-->
+    <string name="input_allintask_payment_password">输入领到支付密码</string>
+    <string name="select_reset_way">选择重置方法</string>
+    <string name="select_reset_payment_password_way">选择重置支付密码方法</string>
+    <string name="sms_identify_code_and_identify_card_number">短信验证码+身份证号</string>
+    <string name="verify_mobile">验证手机</string>
+    <string name="we_have_sent">我们已发送</string>
+    <string name="to_your_phone">到您的手机</string>
+    <string name="verify_identify_card">验证身份证</string>
+    <string name="fill_in">填写</string>
+    <string name="verify_identity">验证身份</string>
+    <string name="input_credentials_number">输入证件号</string>
+    <string name="confirm_new_payment_password">确认新的支付密码</string>
+    <string name="payment_password_unlock">支付密码解锁</string>
+    <string name="please_input_payment_password_to_verify_identity">请输入支付密码，以验证身份</string>
+    <string name="verify_payment_password">验证支付密码</string>
+
+    <!-- 托管薪资 -->
+    <string name="trusteeship_pay_content">95%托管薪资的雇主，更快找到靠谱的服务商，更快完成需求。</string>
+    <string name="trusteeship_amount">托管金额</string>
+    <string name="select_trusteeship_way">选择托管方式</string>
+    <string name="withhold_trusteeship">暂不托管</string>
+
+    <!-- 安全管理 -->
+    <string name="security_management_title">保护自己的支付安全</string>
+    <string name="security_management_content">完善支付密码、账户锁；定期更改密码；不要设置与论坛等社交平台一样的密码。</string>
+    <string name="security_management_first_title">设置密码，支付更安全</string>
+    <string name="security_management_second_title">开启账户锁，进入钱包需验证</string>
+    <string name="fingerprint_unlock">指纹解锁</string>
+    <string name="gesture_unlock">手势解锁</string>
+    <string name="close_fingerprint_lock_title">关闭手势账户锁</string>
+    <string name="close_fingerprint_lock_content">关闭账户锁后，进入钱包将没有验证方式</string>
+    <string name="go_on">继续</string>
+    <string name="close_gesture_lock_title">关闭指纹账户锁</string>
+    <string name="close_gesture_lock_content">关闭账户锁后，进入钱包将没有验证方式</string>
+    <string name="change_payment_password">更改支付密码</string>
+    <string name="forget_payment_password">忘记支付密码</string>
+
+    <!-- 指纹验证 -->
+    <string name="fingerprint_verify">指纹验证</string>
+    <string name="fingerprint_verify_title">验证指纹以进入钱包</string>
+    <string name="click_to_verify_fingerprint">点击验证指纹</string>
+
+    <!-- 手势密码 -->
+    <string name="gesture_password">手势密码</string>
+    <string name="please_set_gesture_password">请设置手势密码</string>
+    <string name="confirm_gesture_password">确认手势密码</string>
+    <string name="please_input_gesture_password">请输入手势密码</string>
+
+    <!-- 认证 -->
+    <string name="zhi_ma_credit_authentication">芝麻信用认证</string>
+    <string name="unauthorized">未认证</string>
+    <string name="authenticated">已认证</string>
+    <string name="identify_card_number">身份证号码</string>
+    <string name="please_input">请输入</string>
+    <string name="identify_authentication">身份认证</string>
+    <string name="submit_authentication">提交认证</string>
+    <string name="already_passed_zhi_ma_authentication">已通过芝麻认证</string>
+
+</resources>

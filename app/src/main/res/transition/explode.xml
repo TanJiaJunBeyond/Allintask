@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <slide  android:slideEdge="bottom" android:duration="200">
+        <targets>
+            <target android:targetId="@id/scroll_view"/>
+
+            <!--<target android:excludeId="@id/search_view"/>-->
+        </targets>
+    </slide>
+    <fade android:duration="500" >
+        <targets >
+            <target android:excludeId="@android:id/statusBarBackground" />
+            <target android:excludeId="@android:id/navigationBarBackground"/>
+            <!--<target android:excludeId="@id/scroll_view"/>-->
+            <!--<target android:excludeId="@id/search_view"/>-->
+        </targets>
+    </fade>
+</transitionSet>

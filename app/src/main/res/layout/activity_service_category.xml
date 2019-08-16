@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.allintask.lingdao.widget.CommonRecyclerView
+                    android:id="@+id/crv_service_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></com.allintask.lingdao.widget.CommonRecyclerView>
+
+                <com.allintask.lingdao.widget.CommonRecyclerView
+                    android:id="@+id/crv_service_category_subclass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.allintask.lingdao.widget.CommonRecyclerView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm_select"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="56dp"
+                android:layout_marginLeft="111dp"
+                android:layout_marginRight="111dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/shape_common_button_background"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

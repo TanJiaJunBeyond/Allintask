@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_no_network"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="159dp"
+        android:layout_height="96dp"
+        android:background="@mipmap/ic_no_network" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/no_network"
+        android:textColor="@color/text_dark_gray"
+        android:textSize="@dimen/small_size" />
+
+    <Button
+        android:id="@+id/btn_check_network"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shape_recommend_details_button_orange_background"
+        android:text="@string/check_network"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_size" />
+
+</LinearLayout>

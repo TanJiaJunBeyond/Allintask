@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_demand_management_first_enter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/theme_orange"
+            android:gravity="center"
+            android:text="@string/demand_manage_first_enter_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mid_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_orange"
+            android:paddingBottom="16dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="@string/demand_manage_first_enter_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/min_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/shape_demand_management_first_enter_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="14dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/ic_demand_head_portrait"
+                        android:drawablePadding="14dp"
+                        android:text="业务"
+                        android:textColor="@color/text_light_black"
+                        android:textSize="@dimen/mid_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="21dp"
+                        android:drawableLeft="@mipmap/ic_demand_wallet"
+                        android:drawablePadding="14dp"
+                        android:text="￥3000预算"
+                        android:textColor="@color/text_dark_gray"
+                        android:textSize="@dimen/small_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="21dp"
+                        android:drawableLeft="@mipmap/ic_demand_time"
+                        android:drawablePadding="14dp"
+                        android:text="30天后到期"
+                        android:textColor="@color/text_dark_gray"
+                        android:textSize="@dimen/small_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:textColor="@color/theme_orange" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="中标"
+                            android:textColor="@color/text_dark_gray" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="93dp"
+                        android:layout_height="59dp"
+                        android:background="@mipmap/ic_demand_status_in_the_bidding" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="23dp"
+                android:background="@color/divider_line_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                android:text="已有10位投标"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/small_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <com.allintask.lingdao.widget.CircleImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:src="@mipmap/ic_default_avatar" />
+
+                <com.allintask.lingdao.widget.CircleImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="9dp"
+                    android:src="@mipmap/ic_default_avatar" />
+
+                <com.allintask.lingdao.widget.CircleImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="9dp"
+                    android:src="@mipmap/ic_default_avatar" />
+
+                <com.allintask.lingdao.widget.CircleImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="9dp"
+                    android:src="@mipmap/ic_default_avatar" />
+
+                <com.allintask.lingdao.widget.CircleImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="9dp"
+                    android:src="@mipmap/ic_default_avatar" />
+
+                <com.allintask.lingdao.widget.CircleImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="9dp"
+                    android:src="@mipmap/ic_default_avatar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_go_to_publish_demand"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="95dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/shape_common_button_background"
+            android:text="@string/know"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

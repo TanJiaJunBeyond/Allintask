@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_demand_status"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_demand_head_portrait"
+            android:drawablePadding="14dp"
+            android:text="业务"
+            android:textColor="@color/text_light_black"
+            android:textSize="@dimen/mid_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_win_the_bidding_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/theme_orange"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/win_the_bidding"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/small_size" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/tv_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@mipmap/ic_demand_wallet"
+            android:drawablePadding="14dp"
+            android:text="￥3000预算"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/small_size" />
+
+        <ImageView
+            android:id="@+id/iv_demand_status"
+            android:layout_width="74dp"
+            android:layout_height="47dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/ic_demand_status_in_the_bidding" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="26dp"
+        android:drawableLeft="@mipmap/ic_demand_time"
+        android:drawablePadding="14dp"
+        android:text="已过期"
+        android:textColor="@color/text_dark_gray"
+        android:textSize="@dimen/small_size" />
+
+    <include
+        layout="@layout/include_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_height"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/tv_bid_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19dp"
+        android:text="已有10位投标"
+        android:textColor="@color/text_light_black"
+        android:textSize="@dimen/small_size" />
+
+    <TextView
+        android:id="@+id/tv_no_bidder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/no_bidder"
+        android:textColor="@color/text_dark_black"
+        android:textSize="@dimen/small_size"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="14dp"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

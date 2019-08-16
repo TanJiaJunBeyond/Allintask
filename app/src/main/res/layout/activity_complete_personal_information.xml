@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="37dp">
+
+        <com.allintask.lingdao.widget.CircleImageView
+            android:id="@+id/civ_head_portrait"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_head_portrait" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/ic_camera" />
+
+    </RelativeLayout>
+
+    <com.allintask.lingdao.widget.EditTextWithDelete
+        android:id="@+id/etwd_real_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/shape_login_edit_text_background"
+        android:drawableLeft="@mipmap/customer_icon"
+        android:drawablePadding="15dp"
+        android:hint="请填写真实姓名"
+        android:maxLength="4"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/c_defult"
+        android:textColorHint="@color/hint_text_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edit_phone"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_login_edit_text_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/gender_icon" />
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/gender_selector"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/male_selector"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="@string/male"
+                android:textColor="@color/sel_gender_btn_text_color"
+                android:textSize="@dimen/normal_size" />
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/gender_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/female_selector"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="@string/female"
+                android:textColor="@color/sel_gender_btn_text_color"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_login_edit_text_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/gender_icon" />
+
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_birthday"
+            android:text="@string/please_select_birthday"
+            android:textColor="@color/hint_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_down" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_complete_information"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/selector_login_button_background_color"
+        android:text="@string/complete_information"
+        android:textColor="@drawable/selector_common_button_text_color"
+        android:textSize="@dimen/normal_size" />
+
+    <TextView
+        android:id="@+id/tv_complete_later"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/complete_later"
+        android:textColor="@color/hint_text_color"
+        android:textSize="@dimen/small_size" />
+
+</LinearLayout>

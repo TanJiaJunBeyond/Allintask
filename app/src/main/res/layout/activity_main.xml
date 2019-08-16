@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <com.allintask.lingdao.widget.reveallayout.CircularRevealButton
+                android:id="@+id/crb_recommend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:anim_show="true"
+                app:defocus_color="@color/c_defult"
+                app:defocus_icon="@mipmap/ic_recommend_manage_normal"
+                app:focus_color="@color/theme_orange"
+                app:focus_icon="@mipmap/ic_recommend_manage_selected"
+                app:text="@string/recommend" />
+
+            <com.allintask.lingdao.widget.reveallayout.CircularRevealButton
+                android:id="@+id/crb_demand_management"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:anim_show="true"
+                app:defocus_color="@color/c_defult"
+                app:defocus_icon="@mipmap/ic_demand_manage_normal"
+                app:focus_color="@color/theme_orange"
+                app:focus_icon="@mipmap/ic_demand_manage_selected"
+                app:text="@string/demand_management" />
+
+            <RelativeLayout
+                android:id="@+id/rl_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.allintask.lingdao.widget.reveallayout.CircularRevealButton
+                    android:id="@+id/crb_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:anim_show="true"
+                    app:defocus_color="@color/c_defult"
+                    app:defocus_icon="@mipmap/ic_message_normal"
+                    app:focus_color="@color/theme_orange"
+                    app:focus_icon="@mipmap/ic_message_selected"
+                    app:is_selected="false"
+                    app:text="@string/message" />
+
+                <TextView
+                    android:id="@+id/unread_message_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/em_unread_count_bg"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/min_size"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <com.allintask.lingdao.widget.reveallayout.CircularRevealButton
+                android:id="@+id/crb_service_management"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:anim_show="true"
+                app:defocus_color="@color/c_defult"
+                app:defocus_icon="@mipmap/ic_service_manage_normal"
+                app:focus_color="@color/theme_orange"
+                app:focus_icon="@mipmap/ic_service_manage_selected"
+                app:text="@string/service_management" />
+
+            <com.allintask.lingdao.widget.reveallayout.CircularRevealButton
+                android:id="@+id/crb_mine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:anim_show="true"
+                app:defocus_color="@color/c_defult"
+                app:defocus_icon="@mipmap/ic_mine_normal"
+                app:focus_color="@color/theme_orange"
+                app:focus_icon="@mipmap/ic_mine_selected"
+                app:text="@string/mine" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom"
+        android:orientation="vertical"></LinearLayout>
+
+</RelativeLayout>

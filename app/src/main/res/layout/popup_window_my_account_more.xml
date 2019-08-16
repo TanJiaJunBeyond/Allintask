@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_my_account_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_window_background_color">
+
+    <LinearLayout
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/toolbar_height"
+        android:background="@drawable/shape_white_background_with_radius"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_bank_card"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/bank_card"
+            android:textColor="@color/text_light_black"
+            android:textSize="@dimen/small_size" />
+
+        <include layout="@layout/include_divider_line" />
+
+        <TextView
+            android:id="@+id/tv_payment_password"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/payment_password" />
+
+    </LinearLayout>
+
+</RelativeLayout>

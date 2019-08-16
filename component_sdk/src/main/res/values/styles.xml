@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Progress -->
+    <style name="progress_bar_style" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@anim/anim_loading</item>
+    </style>
+
+    <!-- Dialog -->
+    <style name="basic_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+
+</resources>
